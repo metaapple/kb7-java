@@ -2,23 +2,50 @@
 
 **Java String 클래스**에서 가장 자주 사용되고 중요한 메서드 **10개**
 <hr>
+<img width="2309" height="1164" alt="image" src="https://github.com/user-attachments/assets/00a5b954-3550-4703-a676-798a22dc5aed" />
+<img width="815" height="312" alt="image" src="https://github.com/user-attachments/assets/b1019fa3-24d7-4d21-81ed-390895194efe" />
 
-| 순위 | 메서드 | 설명 | 반환 타입 | 예시 |
-|------|--------|------|----------|------|
-| 1 | `length()` | 문자열의 길이를 반환 | `int` | `"Hello".length()` → 5 |
-| 2 | `charAt(int index)` | 특정 위치의 문자 1개 반환 | `char` | `"Hello".charAt(1)` → 'e' |
-| 3 | `substring(int beginIndex)`<br>`substring(int beginIndex, int endIndex)` | 문자열 일부를 잘라서 반환 | `String` | `"HelloWorld".substring(5)` → "World"<br>`"HelloWorld".substring(0,5)` → "Hello" |
-| 4 | `equals(Object obj)` | 문자열 내용이 같은지 비교 (대소문자 구분) | `boolean` | `"java".equals("Java")` → false |
-| 5 | `equalsIgnoreCase(String anotherString)` | 대소문자 구분 없이 비교 | `boolean` | `"java".equalsIgnoreCase("Java")` → true |
-| 6 | `indexOf(String str)` | 특정 문자열이 처음 등장하는 위치 반환 | `int` | `"Hello World".indexOf("World")` → 6 |
-| 7 | `contains(CharSequence s)` | 특정 문자열을 포함하고 있는지 확인 | `boolean` | `"Hello".contains("ell")` → true |
-| 8 | `replace(CharSequence target, CharSequence replacement)` | 문자열 치환 | `String` | `"Hello World".replace("World", "Java")` → "Hello Java" |
-| 9 | `trim()` | 양쪽 공백 제거 | `String` | `"  Hello  ".trim()` → "Hello" |
-| 10 | `split(String regex)` | 정규식 기준으로 문자열을 배열로 분리 | `String[]` | `"apple,banana,orange".split(",")` → ["apple", "banana", "orange"] |
+```
+public class StringMethodExample {
+    public static void main(String[] args) {
+        
+        String str = "  Hello Java World  ";
+        
+        System.out.println("원본 문자열: [" + str + "]");
+        System.out.println("1. length()          : " + str.length());
+        System.out.println("2. charAt(7)         : " + str.charAt(7));
+        System.out.println("3. substring(7, 11)  : " + str.substring(7, 11));
+        System.out.println("4. equals(\"hello\")   : " + str.equals("hello"));
+        System.out.println("5. equalsIgnoreCase  : " + str.trim().equalsIgnoreCase("hello java world"));
+        System.out.println("6. indexOf(\"Java\")    : " + str.indexOf("Java"));
+        System.out.println("7. contains(\"World\") : " + str.contains("World"));
+        System.out.println("8. replace(\"Java\", \"Python\") : " + str.replace("Java", "Python"));
+        System.out.println("9. trim()            : [" + str.trim() + "]");
+        
+        String[] arr = str.trim().split(" ");
+        System.out.print("10. split(\" \")       : ");
+        for (String s : arr) {
+            System.out.print("[" + s + "] ");
+        }
+        System.out.println();
+    }
+}
+```
 
-### 자주 쓰이는 추가 메서드
-- `toUpperCase()` / `toLowerCase()` : 대문자/소문자 변환
-- `startsWith()` / `endsWith()` : 시작/끝 문자열 확인
-- `isEmpty()` / `isBlank()` (Java 11+) : 빈 문자열 확인
-- `strip()` (Java 11+) : trim()보다 강력한 공백 제거
+```
+원본 문자열: [  Hello Java World  ]
+1. length()          : 20
+2. charAt(7)         : J
+3. substring(7, 11)  : Java
+4. equals("hello")   : false
+5. equalsIgnoreCase  : true
+6. indexOf("Java")    : 9
+7. contains("World") : true
+8. replace("Java", "Python") : [  Hello Python World  ]
+9. trim()            : [Hello Java World]
+10. split(" ")       : [Hello] [Java] [World]
+```
+
+
+
 
