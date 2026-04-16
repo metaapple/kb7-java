@@ -163,76 +163,6 @@ num5 ──▶ 배열 C  (clone으로 새 배열)
 
 ```
 
-# ENUM
-- 타입 안전성 (Type Safety) — 가장 중요한 이유
-- 잘못된 값을 넣는 실수를 컴파일 단계에서 막아줌.
-- String이나 int로 요일을 표현하면 실수가 쉽게 발생
-
-- 가독성과 유지보수성 향상
-- 의미 있는 이름으로 코드를 작성할 수 있음
-- 관련된 상수들을 하나의 타입으로 논리적으로 그룹화함.
-
-```
-Week.java (Enum 정의)
-
----------------------------
-package array;
-
-
-public enum Week {
-    MONDAY,     // 월요일
-    TUESDAY,    // 화요일
-    WEDNESDAY,  // 수요일
-    THURSDAY,   // 목요일
-    FRIDAY,     // 금요일
-    SATURDAY,   // 토요일
-    SUNDAY      // 일요일
-}
-```
-
-```
-
-오늘은 WEDNESDAY입니다.
-수요일! 벌써 주 중반이네요~
-
-```
-
-```
-
-package array;
-
-public class EnumTest {
-    public static void main(String[] args) {
-        
-        // 오늘 요일을 하나 지정
-        Week today = Week.WEDNESDAY;
-        
-        System.out.println("오늘은 " + today + "입니다.");
-        
-        // switch문으로 사용하기 (가장 많이 쓰이는 방식)
-        switch(today) {
-            case MONDAY:
-                System.out.println("월요일은 힘들어요...");
-                break;
-            case WEDNESDAY:
-                System.out.println("수요일! 벌써 주 중반이네요~");
-                break;
-            case FRIDAY:
-                System.out.println("불금입니다!!");
-                break;
-            case SATURDAY:
-            case SUNDAY:
-                System.out.println("주말이예요~ 행복한 시간!");
-                break;
-            default:
-                System.out.println("평일입니다.");
-        }
-    }
-}
-
-```
-
-
 # 2차원 배열
 ```
 package array;
@@ -394,6 +324,75 @@ public class StringMethodExample {
 8. replace("Java", "Python") : [  Hello Python World  ]
 9. trim()            : [Hello Java World]
 10. split(" ")       : [Hello] [Java] [World]
+```
+
+# ENUM
+- 타입 안전성 (Type Safety) — 가장 중요한 이유
+- 잘못된 값을 넣는 실수를 컴파일 단계에서 막아줌.
+- String이나 int로 요일을 표현하면 실수가 쉽게 발생
+
+- 가독성과 유지보수성 향상
+- 의미 있는 이름으로 코드를 작성할 수 있음
+- 관련된 상수들을 하나의 타입으로 논리적으로 그룹화함.
+
+```
+Week.java (Enum 정의)
+
+---------------------------
+package array;
+
+
+public enum Week {
+    MONDAY,     // 월요일
+    TUESDAY,    // 화요일
+    WEDNESDAY,  // 수요일
+    THURSDAY,   // 목요일
+    FRIDAY,     // 금요일
+    SATURDAY,   // 토요일
+    SUNDAY      // 일요일
+}
+```
+
+```
+
+오늘은 WEDNESDAY입니다.
+수요일! 벌써 주 중반이네요~
+
+```
+
+```
+
+package array;
+
+public class EnumTest {
+    public static void main(String[] args) {
+        
+        // 오늘 요일을 하나 지정
+        Week today = Week.WEDNESDAY;
+        
+        System.out.println("오늘은 " + today + "입니다.");
+        
+        // switch문으로 사용하기 (가장 많이 쓰이는 방식)
+        switch(today) {
+            case MONDAY:
+                System.out.println("월요일은 힘들어요...");
+                break;
+            case WEDNESDAY:
+                System.out.println("수요일! 벌써 주 중반이네요~");
+                break;
+            case FRIDAY:
+                System.out.println("불금입니다!!");
+                break;
+            case SATURDAY:
+            case SUNDAY:
+                System.out.println("주말이예요~ 행복한 시간!");
+                break;
+            default:
+                System.out.println("평일입니다.");
+        }
+    }
+}
+
 ```
 
 
