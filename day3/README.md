@@ -7,7 +7,7 @@
 
 ## 📂 프로젝트 구조
 
-> 일부 마크다운 뷰어에서는 `mermaid`가 안 보여서, **텍스트 그림(ASCII)** 으로 정리했습니다.
+
 
 ```text
 day3
@@ -111,6 +111,142 @@ num5 ──▶ 배열 C  (clone으로 새 배열)
 ```
 
 ---
+<img width="2598" height="1460" alt="image" src="https://github.com/user-attachments/assets/90fe2435-ecaf-4706-86cd-50f1087e65f5" />
+<img width="2569" height="1457" alt="image" src="https://github.com/user-attachments/assets/03b18493-f9fd-489c-8a38-a243dbd9f583" />
+<img width="2569" height="1457" alt="image" src="https://github.com/user-attachments/assets/353efb23-f9ab-4d0a-8a92-08473a6bca91" />
+<img width="2582" height="1457" alt="image" src="https://github.com/user-attachments/assets/dfa1af28-768f-427c-a660-9c6b48a69173" />
+<img width="2577" height="1453" alt="image" src="https://github.com/user-attachments/assets/9f1c46b2-4178-4229-9e59-c8998ed07880" />
+<img width="2568" height="1452" alt="image" src="https://github.com/user-attachments/assets/12fec79f-1874-4b65-8139-5b51a3a1c084" />
+<img width="2568" height="1452" alt="image" src="https://github.com/user-attachments/assets/29fad864-406f-4435-a6a1-d587d672fd67" />
+<img width="2303" height="1296" alt="image" src="https://github.com/user-attachments/assets/24a37554-19fc-46bf-ba55-7ca2cbf3493d" />
+<img width="2303" height="1296" alt="image" src="https://github.com/user-attachments/assets/2c1c492a-acc3-4768-807b-8939878d7837" />
+<img width="2585" height="1458" alt="image" src="https://github.com/user-attachments/assets/03e48449-f43e-4d64-be81-9ddf82b0a6eb" />
+<img width="2586" height="1459" alt="image" src="https://github.com/user-attachments/assets/9833cc84-a417-4932-b949-c147e387721a" />
+<img width="2586" height="1459" alt="image" src="https://github.com/user-attachments/assets/329e74be-09a1-4bdc-920d-8f4ce77b3e98" />
+<img width="2584" height="1462" alt="image" src="https://github.com/user-attachments/assets/6e3c0c0c-26f4-4216-b50d-fa3fc039384c" />
+<img width="2582" height="1457" alt="image" src="https://github.com/user-attachments/assets/5b8d2763-da86-496c-ad5e-d4180b111145" />
+<img width="2305" height="1304" alt="image" src="https://github.com/user-attachments/assets/c53c06ef-4be6-40a1-99f7-124d1323bd09" />
+<img width="2478" height="1396" alt="image" src="https://github.com/user-attachments/assets/dff0f97d-bac6-4580-b23f-288b6fc0caa4" />
+<img width="2301" height="1291" alt="image" src="https://github.com/user-attachments/assets/c4a4081d-4be6-4744-98f7-44a05ca17f88" />
+<img width="2479" height="1401" alt="image" src="https://github.com/user-attachments/assets/08190275-7026-43f1-bee4-e73589a269d5" />
+
+```
+// 친구이름
+        String[] names = {"홍길동", "김길동", "박길동", "송길동", "정길동"};
+        for (int i = 0; i < names.length; i++) {
+            System.out.print(names[i] + " ");
+        }
+        
+        System.out.println();
+        
+        // 우리 가족 5명의 나이를 넣어보세요. 전체 출력
+        int[] ages = {50, 40, 30, 20, 10};
+        for (int i = 0; i < ages.length; i++) {
+            System.out.print(ages[i] + " ");
+        }
+        
+        System.out.println();
+        
+        // 친구들의 발 사이즈를 넣어보세요. 전체 출력
+        int[] shoes = {134, 235, 245, 255, 300};
+        for (int i = 0; i < shoes.length; i++) {
+            System.out.print(shoes[i] + " ");
+        }
+        
+        System.out.println();
+        
+        // 친구들의 성별을 넣어보세요. 전체 출력
+        char[] gender = {'남', '여', '남', '남', '여'};
+        for (int i = 0; i < gender.length; i++) {
+            System.out.print(gender[i] + " ");
+        }
+
+```
+
+# ENUM
+- 타입 안전성 (Type Safety) — 가장 중요한 이유
+- 잘못된 값을 넣는 실수를 컴파일 단계에서 막아줌.
+- String이나 int로 요일을 표현하면 실수가 쉽게 발생
+
+- 가독성과 유지보수성 향상
+- 의미 있는 이름으로 코드를 작성할 수 있음
+- 관련된 상수들을 하나의 타입으로 논리적으로 그룹화함.
+
+```
+Week.java (Enum 정의)
+
+---------------------------
+package array;
+
+
+public enum Week {
+    MONDAY,     // 월요일
+    TUESDAY,    // 화요일
+    WEDNESDAY,  // 수요일
+    THURSDAY,   // 목요일
+    FRIDAY,     // 금요일
+    SATURDAY,   // 토요일
+    SUNDAY      // 일요일
+}
+```
+
+```
+
+오늘은 WEDNESDAY입니다.
+수요일! 벌써 주 중반이네요~
+
+```
+
+```
+
+package array;
+
+public class EnumTest {
+    public static void main(String[] args) {
+        
+        // 오늘 요일을 하나 지정
+        Week today = Week.WEDNESDAY;
+        
+        System.out.println("오늘은 " + today + "입니다.");
+        
+        // switch문으로 사용하기 (가장 많이 쓰이는 방식)
+        switch(today) {
+            case MONDAY:
+                System.out.println("월요일은 힘들어요...");
+                break;
+            case WEDNESDAY:
+                System.out.println("수요일! 벌써 주 중반이네요~");
+                break;
+            case FRIDAY:
+                System.out.println("불금입니다!!");
+                break;
+            case SATURDAY:
+            case SUNDAY:
+                System.out.println("주말이예요~ 행복한 시간!");
+                break;
+            default:
+                System.out.println("평일입니다.");
+        }
+    }
+}
+
+```
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
