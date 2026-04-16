@@ -7,15 +7,16 @@
 
 ## 📂 프로젝트 구조
 
-```mermaid
-graph TD
-    Project[day3] --> src
-    src --> array[array 패키지]
+> 일부 마크다운 뷰어에서는 `mermaid`가 안 보여서, **텍스트 그림(ASCII)** 으로 정리했습니다.
 
-    array --> A1[Array1.java<br/>1차원 배열 / for, for-each]
-    array --> A2[Array2.java<br/>2차원 배열(리터럴로 생성) / 중첩 for]
-    array --> A3[Array3.java<br/>2차원 배열 new / 가변 길이(행마다 열 다름)]
-    array --> A4[Array4.java<br/>배열 복사: 얕은 복사 vs 깊은 복사(clone)]
+```text
+day3
+└─ src
+   └─ array
+      ├─ Array1.java  (1차원 배열 / for, for-each)
+      ├─ Array2.java  (2차원 배열 리터럴 / 중첩 for)
+      ├─ Array3.java  (2차원 배열 new / 가변 길이 2차원 배열)
+      └─ Array4.java  (배열 복사: 얕은 복사 vs 깊은 복사(clone))
 ```
 
 ---
@@ -36,25 +37,13 @@ graph TD
 
 #### 📌 그림: 1차원 배열 메모리(개념)
 
-```mermaid
-flowchart LR
-    subgraph S[스택(Stack)]
-      ref[jumsu2 (참조 변수)]
-    end
+```text
+[스택(Stack)]                         [힙(Heap)]
 
-    subgraph H[힙(Heap)]
-      arr[int[] 객체]
-      len[length = 3]
-      i0[[0: 100]]
-      i1[[1: 200]]
-      i2[[2: 300]]
-    end
-
-    ref -->|주소(참조)| arr
-    arr --- len
-    arr --- i0
-    arr --- i1
-    arr --- i2
+jumsu2 (참조 변수)  ───────────────▶   int[] (length = 3)
+                                     ├─ [0] = 100
+                                     ├─ [1] = 200
+                                     └─ [2] = 300
 ```
 
 ---
@@ -68,15 +57,13 @@ flowchart LR
 
 #### 📌 그림: 2차원 배열 접근(개념)
 
-```mermaid
-flowchart TB
-  scores[int[][] scores] --> r0[int[] scores[0]]
-  scores --> r1[int[] scores[1]]
-  r0 --> r00[scores[0][0]]
-  r0 --> r01[scores[0][1]]
-  r0 --> r02[scores[0][2]]
-  r1 --> r10[scores[1][0]]
-  r1 --> r11[scores[1][1]]
+```text
+scores (int[][])
+ ├─ scores[0] (int[]) ──▶ scores[0][0], scores[0][1], scores[0][2] ...
+ └─ scores[1] (int[]) ──▶ scores[1][0], scores[1][1] ...
+
+※ scores.length       = 행(row) 개수
+※ scores[i].length    = i행의 열(column) 개수
 ```
 
 ---
@@ -93,15 +80,10 @@ scores2[1] = new int[] {1, 2};
 
 #### 📌 그림: 행마다 길이가 다른 2차원 배열
 
-```mermaid
-flowchart LR
-  scores2[int[][] scores2] --> row0[int[] (length 3)]
-  scores2 --> row1[int[] (length 2)]
-  row0 --> a0[0]
-  row0 --> a1[0]
-  row0 --> a2[0]
-  row1 --> b0[1]
-  row1 --> b1[2]
+```text
+scores2 (int[][])
+ ├─ scores2[0] = new int[3]   → [0, 0, 0]
+ └─ scores2[1] = new int[2]   → [1, 2]  (예시)
 ```
 
 ---
@@ -117,20 +99,73 @@ flowchart LR
 
 #### 📌 그림: 얕은/깊은 복사 차이
 
-```mermaid
-flowchart LR
-  subgraph Shallow[얕은 복사]
-    n3[num3] --> A[int[] A]
-    n4[num4] --> A
-  end
+```text
+[얕은 복사]
+num3 ──▶ (같은 배열 A) ◀── num4
+  → num3[0] 바꾸면 num4에서도 똑같이 바뀜
 
-  subgraph Deep[깊은 복사]
-    n3b[num3] --> B[int[] B]
-    n5[num5 = num3.clone()] --> C[int[] C]
-  end
+[깊은 복사]
+num3 ──▶ 배열 B
+num5 ──▶ 배열 C  (clone으로 새 배열)
+  → num3 바꿔도 num5는 영향 없음
 ```
 
 ---
+
+
+
+
+**Java String 클래스**에서 가장 자주 사용되고 중요한 메서드 **10개**
+<hr>
+<img width="2309" height="1164" alt="image" src="https://github.com/user-attachments/assets/00a5b954-3550-4703-a676-798a22dc5aed" />
+<img width="815" height="312" alt="image" src="https://github.com/user-attachments/assets/b1019fa3-24d7-4d21-81ed-390895194efe" />
+
+```
+public class StringMethodExample {
+    public static void main(String[] args) {
+        
+        String str = "  Hello Java World  ";
+        
+        System.out.println("원본 문자열: [" + str + "]");
+        System.out.println("1. length()          : " + str.length());
+        System.out.println("2. charAt(7)         : " + str.charAt(7));
+        System.out.println("3. substring(7, 11)  : " + str.substring(7, 11));
+        System.out.println("4. equals(\"hello\")   : " + str.equals("hello"));
+        System.out.println("5. equalsIgnoreCase  : " + str.trim().equalsIgnoreCase("hello java world"));
+        System.out.println("6. indexOf(\"Java\")    : " + str.indexOf("Java"));
+        System.out.println("7. contains(\"World\") : " + str.contains("World"));
+        System.out.println("8. replace(\"Java\", \"Python\") : " + str.replace("Java", "Python"));
+        System.out.println("9. trim()            : [" + str.trim() + "]");
+        
+        String[] arr = str.trim().split(" ");
+        System.out.print("10. split(\" \")       : ");
+        for (String s : arr) {
+            System.out.print("[" + s + "] ");
+        }
+        System.out.println();
+    }
+}
+```
+
+```
+원본 문자열: [  Hello Java World  ]
+1. length()          : 20
+2. charAt(7)         : J
+3. substring(7, 11)  : Java
+4. equals("hello")   : false
+5. equalsIgnoreCase  : true
+6. indexOf("Java")    : 9
+7. contains("World") : true
+8. replace("Java", "Python") : [  Hello Python World  ]
+9. trim()            : [Hello Java World]
+10. split(" ")       : [Hello] [Java] [World]
+```
+
+
+
+
+
+
 
 ## 🚀 실행 방법
 
