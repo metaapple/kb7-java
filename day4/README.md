@@ -1,6 +1,6 @@
 
 
-# 4일차: 자바 프로그래밍 수업
+☕ Java Basic Learning - Day 4 (Class & Object)
 
 ## 📚 개요
 이 수업에서는 자바의 객체 지향 프로그래밍의 핵심 개념들을 배웁니다:
