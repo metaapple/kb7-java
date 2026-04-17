@@ -271,6 +271,58 @@ public class StringTest {
 | **String 불변성** | 값이 변경되면 새로 생성 | 같은 값은 하나만 생성 |
 
 ---
+<img width="1382" height="782" alt="image" src="https://github.com/user-attachments/assets/7ef44a24-3a5b-453f-936e-6eae8f0ca458" />
+
+<img width="2286" height="1292" alt="image" src="https://github.com/user-attachments/assets/67133d72-39b3-4f7b-a642-bb44bae1990a" />
+<img width="2474" height="1388" alt="image" src="https://github.com/user-attachments/assets/05b435ad-a0e1-44db-ada3-dcaa38754e36" />
+<img width="2481" height="1402" alt="image" src="https://github.com/user-attachments/assets/e5052480-3220-423b-b0e5-c9467e2d7010" />
+<img width="2481" height="1402" alt="image" src="https://github.com/user-attachments/assets/f09adf30-e597-4bba-a2b0-7623c573f2ac" />
+<img width="1382" height="782" alt="image" src="https://github.com/user-attachments/assets/9f8aa77c-a997-4d28-9f75-79a9a4926166" />
+<img width="2300" height="1294" alt="image" src="https://github.com/user-attachments/assets/96e747f0-1053-4d99-9ee0-c5ac67c95b09" />
+<img width="2300" height="1294" alt="image" src="https://github.com/user-attachments/assets/964cb83a-6d60-4185-8777-c855c9eda529" />
+<img width="2300" height="1294" alt="image" src="https://github.com/user-attachments/assets/f98ae254-c31e-464e-af4d-2dc4016804a2" />
+<img width="2314" height="1303" alt="image" src="https://github.com/user-attachments/assets/1244851d-99f5-43ff-ae0b-5e1a5f27b89b" />
+<img width="2313" height="1302" alt="image" src="https://github.com/user-attachments/assets/8be3680d-3392-48b9-948e-843de7a2c99f" />
+<img width="2305" height="1312" alt="image" src="https://github.com/user-attachments/assets/7f3eddb8-7988-455d-a434-c759798c2a04" />
+<img width="2305" height="1312" alt="image" src="https://github.com/user-attachments/assets/327fafdf-aafb-4655-8d4e-4ffac2980c3f" />
+<img width="2308" height="1302" alt="image" src="https://github.com/user-attachments/assets/2445a70a-d40f-43b9-bcf5-62a92c78cf94" />
+<img width="2307" height="1306" alt="image" src="https://github.com/user-attachments/assets/0089e1a3-e92a-4339-b8da-27ad558fae97" />
+<img width="2298" height="1296" alt="image" src="https://github.com/user-attachments/assets/a5018470-ec5e-4708-8d36-da8969c95c5f" />
+<img width="2310" height="1310" alt="image" src="https://github.com/user-attachments/assets/3411e03f-3ead-4d54-92f7-7c412d6f7bb9" />
+<img width="2310" height="1310" alt="image" src="https://github.com/user-attachments/assets/7bcb96de-6537-43e7-8094-585635d607d2" />
+<img width="2496" height="1417" alt="image" src="https://github.com/user-attachments/assets/35cec024-65da-44fe-a98f-911f5f753a4d" />
+<img width="2308" height="1303" alt="image" src="https://github.com/user-attachments/assets/c1de7aee-d120-480e-b37b-ec469a01fa98" />
+<img width="2309" height="1306" alt="image" src="https://github.com/user-attachments/assets/d1429a4d-7c79-4bdb-9213-64a33d6d1ebb" />
+<img width="2309" height="1306" alt="image" src="https://github.com/user-attachments/assets/a9ee5c6b-258f-45cc-8569-6274b1c93662" />
+<img width="2478" height="1410" alt="image" src="https://github.com/user-attachments/assets/37626439-91e3-48a8-a68a-2d6a083db489" />
+<img width="2305" height="1308" alt="image" src="https://github.com/user-attachments/assets/08f0ecf3-60ac-4b8d-937c-5d179053ac76" />
+<img width="2474" height="1401" alt="image" src="https://github.com/user-attachments/assets/7a1cb0aa-5361-41d0-9ea4-10668c1a60ca" />
+<img width="2474" height="1404" alt="image" src="https://github.com/user-attachments/assets/2b931a14-90b9-4a1d-871e-ed9fa135e571" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
