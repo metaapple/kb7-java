@@ -8,6 +8,21 @@
 - **배열** - 같은 타입의 데이터를 효율적으로 관리
 - **문자열** - String class의 주요 기능
 
+
+## 🔗 파일 구조
+
+```
+day4/
+├── src/
+│   ├── object/
+│   │   ├── Television.java
+│   │   └── TVUse.java
+│   └── test/
+│       ├── Array.java
+│       └── StringTest.java
+└── README.md
+```
+
 ---
 
 ## 1️⃣ Class와 객체 (Class & Object)
@@ -257,18 +272,5 @@ public class StringTest {
 
 ---
 
-## 🔗 파일 구조
-
-```
-day4/
-├── src/
-│   ├── object/
-│   │   ├── Television.java
-│   │   └── TVUse.java
-│   └── test/
-│       ├── Array.java
-│       └── StringTest.java
-└── README.md
-```
 
 
