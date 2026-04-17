@@ -1,6 +1,5 @@
 
 
-```markdown
 # 4일차: 자바 프로그래밍 수업
 
 ## 📚 개요
@@ -61,10 +60,10 @@ public class Television {
 | 개념 | 설명 | 예시 |
 |------|------|------|
 | **멤버변수** | class의 속성, 전역변수 | `String size;`, `int price;` |
-| **멤버method** | class의 동작, 함수 | `powerOn()`, `powerOff()` |
+| **멤버메서드** | class의 동작, 함수 | `powerOn()`, `powerOff()` |
 | **자동 초기화** | class 변수는 컴파일시 자동 초기화 | String → null, int → 0 |
 | **지역변수** | method 내부 변수, 명시적 초기화 필요 | `int bonus = 10000;` |
-| **method 중복** | 같은 이름, 다른 입력값으로 정의 가능 | `getPrice()`, `getPrice(int sale)` |
+| **오버로딩** | 같은 이름, 다른 입력값으로 정의 가능 | `getPrice()`, `getPrice(int sale)` |
 
 ---
 
@@ -271,5 +270,5 @@ day4/
 │       └── StringTest.java
 └── README.md
 ```
-```
+
 
