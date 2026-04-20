@@ -419,3 +419,47 @@ flowchart TB
     C -.-> D2
     C -.-> D3
 ```
+<br>
+- 생성자
+<img width="1672" height="941" alt="38B84CD3-4047-4AA7-A469-2653F466F735" src="https://github.com/user-attachments/assets/630e0e35-ad9b-4ef0-9f08-d1f01c7cfcb7" />
+<img width="1670" height="942" alt="767CFCF8-0EB9-4E62-8878-FAF1DC0C368D" src="https://github.com/user-attachments/assets/5e947ae6-c636-4413-8d54-6170b4c57e93" />
+<img width="1672" height="941" alt="8ADFA9C1-5715-42B6-B905-4B79590EAFC5" src="https://github.com/user-attachments/assets/89216860-0383-4299-9265-0bf7fa4915f7" />
+<img width="1626" height="967" alt="37F73F38-9A9D-46B4-A36A-B1ED2E686E12" src="https://github.com/user-attachments/assets/b3b254d6-03a5-45d7-a487-908cd22b3680" />
+<img width="1672" height="941" alt="2352D334-8F76-4A89-837A-551E1FE04DE0" src="https://github.com/user-attachments/assets/898c082e-cda7-4a78-b113-9127503fdf3f" />
+<img width="2477" height="1402" alt="IMG_2093" src="https://github.com/user-attachments/assets/6c912ab5-af77-4c7c-b6ba-30b2fa09dc4e" />
+<img width="1697" height="927" alt="4CF49DAE-C095-4432-8CDA-545BCBCB0D06 (1)" src="https://github.com/user-attachments/assets/e61ec068-dbee-429c-b9f7-10cf57963563" />
+
+
+<br>
+- static
+<img width="1660" height="948" alt="66B8869A-2B75-45FD-A099-3E16396AA030" src="https://github.com/user-attachments/assets/3d11f0a5-7ad6-4aec-abee-33da8aabbee6" />
+<img width="1668" height="943" alt="1D444ADF-D2C4-41E5-8D5E-1D442D5E4581" src="https://github.com/user-attachments/assets/4835c3be-6420-4916-9d59-fed885c67a65" />
+<img width="1658" height="949" alt="32800EB8-FD77-4C14-A6D7-445AF749DC97" src="https://github.com/user-attachments/assets/52e471f8-9509-4af6-ac9e-48c87f5c6220" />
+<img width="1672" height="941" alt="5A503F59-FED9-410B-BCEE-218700535B98" src="https://github.com/user-attachments/assets/1bec5edd-8a83-40f1-bbf2-8c254fe16f5d" />
+<img width="1269" height="574" alt="image" src="https://github.com/user-attachments/assets/c6a0a720-22b0-4b7b-8f38-45698511a849" />
+
+
+<br>
+- final(상수 설정)
+<img width="1672" height="941" alt="D60ECE01-9B14-4B00-BA72-B48040B81EED" src="https://github.com/user-attachments/assets/65fe4c17-34ae-40bb-b32c-5b81d781bd89" />
+<img width="1662" height="946" alt="8AC43B71-D338-486B-AA4C-45D02F83AEA7" src="https://github.com/user-attachments/assets/9c21b722-46a5-4909-a55c-d62a15bdb0a1" />
+
+<br>
+- getter/setter
+<img width="1916" height="1072" alt="스크린샷 2026-04-19 18 00 43" src="https://github.com/user-attachments/assets/a08be64b-17dd-4aa2-8189-0370216e7078" />
+<img width="1200" height="1107" alt="IMG_2031" src="https://github.com/user-attachments/assets/569c6883-e3b5-44de-9079-ffdd3173b981" />
+
+
+<br>
+-접근 제어자
+<img width="1673" height="940" alt="1E3B2678-0D50-4AD4-B639-F51B9E4E41AC" src="https://github.com/user-attachments/assets/54293c24-0bd7-4dd4-a40b-dba4ef05eb1a" />
+
+
+<br>
+- 가변길이 매개변수
+<img width="1200" height="906" alt="IMG_2032" src="https://github.com/user-attachments/assets/d4b31b7e-605c-43b8-8ecc-a64717cb0ca7" />
+<img width="1200" height="1035" alt="IMG_2034" src="https://github.com/user-attachments/assets/a61512d9-33ba-41b9-a916-8f4e14293817" />
+
+
+
+
