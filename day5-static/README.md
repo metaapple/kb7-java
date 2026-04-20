@@ -433,7 +433,7 @@ flowchart TB
 <img width="2473" height="1402" alt="image" src="https://github.com/user-attachments/assets/61d40813-5916-4bbc-a21a-04db5b725125" />
 <img width="2465" height="1411" alt="image" src="https://github.com/user-attachments/assets/ff996c38-bb2c-4349-80dd-c0883c23fb8f" />
 <img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/942b3ac5-08f2-43fd-82b7-91447a5c2d76" />
-<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/fe3a2593-7c43-4e35-b325-8783123e97f4" />
+
 <img width="1532" height="1027" alt="image" src="https://github.com/user-attachments/assets/14a0c3e8-b09f-4e8a-9a35-1557f1d53c9e" />
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/2350a2b6-7db5-458e-a9d2-69334f51fe61" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/92b72644-9b70-4753-b620-e3ee2c8a7de8" />
