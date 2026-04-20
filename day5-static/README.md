@@ -448,6 +448,7 @@ flowchart TB
 - getter/setter
 <img width="1916" height="1072" alt="스크린샷 2026-04-19 18 00 43" src="https://github.com/user-attachments/assets/a08be64b-17dd-4aa2-8189-0370216e7078" />
 <img width="1200" height="1107" alt="IMG_2031" src="https://github.com/user-attachments/assets/569c6883-e3b5-44de-9079-ffdd3173b981" />
+<img width="1508" height="1805" alt="IMG_2030" src="https://github.com/user-attachments/assets/533648fe-4fe5-4bfc-a32d-76f8b0bee3cb" />
 
 
 <br>
