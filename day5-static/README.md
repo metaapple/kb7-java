@@ -49,6 +49,8 @@ day5-static/
                                 └─────────────────────┘
 ```
 
+<img width="2393" height="1840" alt="image" src="https://github.com/user-attachments/assets/e0e92e34-af01-4fb3-82f7-995a127aea76" />
+
 ### 코드: `Account.java`
 
 ```java
@@ -280,6 +282,10 @@ sequenceDiagram
 ```
 
 ### 코드: `Graphic.java`
+
+<img width="2393" height="1840" alt="image" src="https://github.com/user-attachments/assets/cc9a76af-60f0-4528-a6ab-2b47d64c7cb0" />
+<img width="2930" height="1683" alt="image" src="https://github.com/user-attachments/assets/3357c34d-553b-456a-9509-adebb77d1769" />
+<img width="503" height="501" alt="image" src="https://github.com/user-attachments/assets/6a711c50-a323-412b-98c7-9372a10c7053" />
 
 ```java
 package object;
