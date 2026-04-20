@@ -98,11 +98,11 @@ public class AccountUse {
 
 ```mermaid
 flowchart LR
-    A[main 시작] --> B[new Account(...)]
-    B --> C[생성자 실행]
-    C --> D[필드에 값 대입]
-    D --> E[참조 반환 → account]
-    E --> F[필드 출력]
+    A["main 시작"] --> B["new Account 호출"]
+    B --> C["생성자 실행"]
+    C --> D["필드에 값 대입"]
+    D --> E["참조를 account에 대입"]
+    E --> F["필드 출력"]
 ```
 
 ---
@@ -248,13 +248,13 @@ public class DayUse {
 ```mermaid
 sequenceDiagram
     participant Main
-    participant PrintStream as System.out
-    participant DayObj as day1 (Day)
+    participant PS as "System.out"
+    participant DayObj as "Day 인스턴스 day1"
 
-    Main->>PrintStream: println(day1)
-    PrintStream->>DayObj: toString()
-    DayObj-->>PrintStream: "Day{doing='...', ...}"
-    PrintStream-->>Main: 콘솔에 출력
+    Main->>PS: println day1
+    PS->>DayObj: toString
+    DayObj-->>PS: Day 필드 문자열
+    PS-->>Main: 콘솔에 출력
 ```
 
 ---
@@ -362,12 +362,12 @@ public class Graphic {
 
 ```mermaid
 flowchart TD
-    A[JFrame, Layout, Font 생성] --> B[frame.setSize]
-    B --> C[frame.setLayout]
-    C --> D[frame.add 버튼들]
-    D --> E[버튼 텍스트/색/폰트 설정]
-    E --> F[frame.setVisible true]
-    F --> G[화면에 창 표시]
+    A["JFrame Layout Font 생성"] --> B["frame.setSize"]
+    B --> C["frame.setLayout"]
+    C --> D["frame.add 로 버튼 추가"]
+    D --> E["버튼 텍스트 색 폰트 설정"]
+    E --> F["frame.setVisible true"]
+    F --> G["화면에 창 표시"]
 ```
 
 ---
@@ -407,15 +407,15 @@ java -cp out object.Graphic
 
 ```mermaid
 flowchart TB
-    subgraph class_area["클래스 영역 (공유)"]
+    subgraph CA["클래스 영역 공유"]
         C["static int count"]
     end
-    subgraph heap["힙 (객체마다 따로)"]
+    subgraph HP["힙 영역 객체 각각"]
         D1["Day 인스턴스 1"]
         D2["Day 인스턴스 2"]
         D3["Day 인스턴스 3"]
     end
-    C -.->|"모두 같은 count 참조"| D1
+    C -.-> D1
     C -.-> D2
     C -.-> D3
 ```
