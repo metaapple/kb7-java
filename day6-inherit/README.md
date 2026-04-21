@@ -95,6 +95,126 @@ classDiagram
 
 ---
 
+### 코드(발췌)와 설명
+
+#### 1) `Employee.java` (필드/생성자/getter-setter/`toString()` 재정의)
+
+```java
+package inherit;
+
+public class Employee extends Object{
+    public String name;
+    String address;
+    protected int salary;
+    private String rrn;
+
+    public Employee(){ }
+
+    public Employee(String name, String address, int salary, String rrn) {
+        this.name = name;
+        this.address = address;
+        this.salary = salary;
+        this.rrn = rrn;
+    }
+
+    public String getRrn() { return rrn; }
+    public void setRrn(String rrn) { this.rrn = rrn; }
+
+    @Override
+    public String toString() {
+        return name + " " + address + " " + salary + " " + rrn;
+    }
+}
+```
+
+- **핵심**: `rrn`은 `private`이라 **직접 접근 불가** → `getRrn()`으로 접근
+- **핵심**: `System.out.println(e)` 시 `toString()`이 자동 호출되므로 출력이 깔끔해짐
+
+#### 2) `Manager.java` (상속 + `super(...)` + `toString()` 확장)
+
+```java
+package inherit;
+
+public class Manager extends Employee {
+    private int bonus;
+
+    public Manager(String name, String address, int salary, String rrn, int bonus) {
+        super(name, address, salary, rrn);
+        this.bonus = bonus;
+    }
+
+    public void test(){
+        System.out.println("관리 감독하다.");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " " + bonus;
+    }
+}
+```
+
+- **핵심**: 자식 생성자에서 `super(...)`로 **부모 필드 초기화**를 먼저 처리
+- **핵심**: `toString()`에서 `super.toString()`을 호출해 **부모 출력 + bonus**로 확장
+
+#### 3) `CompanyUse.java` (실행/확인용 main)
+
+```java
+package inherit;
+
+public class CompanyUse {
+    public static void main(String[] args) {
+        Employee e = new Employee("홍길동", "광진구", 100000, "040701");
+        System.out.println(e);
+
+        System.out.println(e.name);
+        System.out.println(e.salary);
+        System.out.println(e.address);
+        // System.out.println(e.rrn); // private이라 직접 접근 불가
+        System.out.println(e.getRrn());
+
+        Manager manager = new Manager("김길동", "영등포", 100000, "040201", 1000);
+        System.out.println(manager);
+        manager.test();
+    }
+}
+```
+
+- **핵심**: `Employee`/`Manager` 출력 차이로 **오버라이딩 결과**를 확인 가능
+
+#### 4) `Graphic2.java` (Swing GUI 예시)
+
+```java
+package test;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Graphic2 {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("나의 첫 그래픽 프로그램");
+        frame.setSize(600, 500);
+        frame.setLayout(new FlowLayout());
+
+        JButton button = new JButton("1증가");
+        JButton button2 = new JButton("1감소");
+        JButton button3 = new JButton("0으로 초기화");
+        JLabel result = new JLabel("0");
+
+        frame.add(button);
+        frame.add(button3);
+        frame.add(button2);
+        frame.add(result);
+
+        frame.setVisible(true);
+    }
+}
+```
+
+- **핵심**: `JFrame`, `JButton`, `JLabel`, `Layout` 같은 **객체를 생성하고 설정(set...)**하는 패턴을 연습
+
+---
+
 ### 표로 요약
 
 #### 1) 클래스별 역할
@@ -146,10 +266,6 @@ classDiagram
 IDE(IntelliJ)에서 각 `main()` 클래스 우클릭 → Run 하면 가장 편합니다.
 
 ---
-
-### 부록: 기존 이미지(수업 캡처)
-
-아래는 기존 README에 있던 이미지 링크를 그대로 보관한 것입니다.
 
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/7736c16c-0075-4b30-bead-66b7ddda3d9a" />
 <img width="2556" height="1437" alt="image" src="https://github.com/user-attachments/assets/3fe2c93a-f66d-43ea-b2b7-062c8f37f96b" />
