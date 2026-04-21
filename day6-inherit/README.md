@@ -1,4 +1,4 @@
-### 코드(발췌)와 설명
+# ☕ Java Basic Learning - Day 5 (생성자 · static · Swing 입문)
 
 #### 1) `Employee.java` (필드/생성자/getter-setter/`toString()` 재정의)
 
