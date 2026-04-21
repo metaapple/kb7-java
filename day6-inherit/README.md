@@ -1,4 +1,4 @@
-## day6-inherit (상속 Inheritance)
+# ☕ Java Basic Learning - Day 5 (상속 Inheritance)
 
 이 폴더는 **상속(`extends`)**, **접근 제어자(public/default/protected/private)**, **생성자에서 `super()` 호출**, **메서드 재정의(override)** 를 한 번에 확인하는 예제입니다.
 
