@@ -331,13 +331,14 @@ IntelliJ에서 각 `main()` 클래스 우클릭 → Run.
 - 추상메서드
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/45c99082-866b-400a-b9f9-b4642d4e77ff" />
 <img width="1672" height="940" alt="image" src="https://github.com/user-attachments/assets/571e76e3-14b7-4858-af13-adca523344b0" />
-
-
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/b1048949-4375-4153-9285-5fb91f4ce361" />
+- 타입변환
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/6d774936-4ffb-415f-90ae-1e15f6a7e330" />
+- 추상클래스
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/a5b4bfa4-5672-4456-a793-2afbcc54bd86" />
 <img width="1671" height="941" alt="image" src="https://github.com/user-attachments/assets/af487105-391b-4408-8d37-6b205e7a91a8" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/216eee16-8a08-4e7e-9187-092670b7e342" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/ac412179-781f-47f5-94ef-b11b799eb5ad" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/2eaf9e6f-b313-43c7-8081-10f620b468de" />
 
 <hr>
