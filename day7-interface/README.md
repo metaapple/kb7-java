@@ -318,3 +318,199 @@ IntelliJ에서 각 `main()` 클래스 우클릭 → Run.
 - `inter.CameraUse` 실행: `Phone` 타입으로 구현체 사용
 - `test.CastingTest` 실행: `List` + 다운캐스팅 예제
 - `test.SuperManUse2` 실행: 업캐스팅/다운캐스팅 흐름 확인
+
+<hr>
+<br>
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/e3cf0528-1477-4ca1-a01f-1ceff46dbb5d" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/0bc36c3e-cbb1-44c0-8825-393b9c78a4d1" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/164ee612-e424-45dc-bfec-2fbe91df0aa8" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/a14c6c90-5a68-45eb-86c8-9df8f4e8ff8c" />
+
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/342970ca-47b5-408e-a37b-978d7edf6deb" />
+<img width="1670" height="942" alt="image" src="https://github.com/user-attachments/assets/b880cb7f-e385-4a1e-98f0-2f40a732f8f3" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/b9cfff3e-31ad-4c59-8e09-09b2a1fa5b54" />
+
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/45c99082-866b-400a-b9f9-b4642d4e77ff" />
+<img width="1672" height="940" alt="image" src="https://github.com/user-attachments/assets/571e76e3-14b7-4858-af13-adca523344b0" />
+<img width="1672" height="940" alt="image" src="https://github.com/user-attachments/assets/10ed906d-981f-4ac5-9b0f-4b8b386b0b28" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/cccd0f45-b74b-479b-aa43-fddcda789ed4" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/b1048949-4375-4153-9285-5fb91f4ce361" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/6d774936-4ffb-415f-90ae-1e15f6a7e330" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/a5b4bfa4-5672-4456-a793-2afbcc54bd86" />
+<img width="1671" height="941" alt="image" src="https://github.com/user-attachments/assets/af487105-391b-4408-8d37-6b205e7a91a8" />
+<img width="1671" height="941" alt="image" src="https://github.com/user-attachments/assets/cfda2cb5-ffd1-4d6e-b19c-739b08524075" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/216eee16-8a08-4e7e-9187-092670b7e342" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/2eaf9e6f-b313-43c7-8081-10f620b468de" />
+
+<hr>
+<br>
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/afafa53a-964a-48f2-867a-f8f52ebd46cd" />
+
+```
+package test;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+//import java.awt.point.*;
+
+public class Graphic2_1 {
+    public static void main(String[] args) {
+        //필요한 객체 ram에 가져다 두어야함.
+//        JFrame frame = new JFrame(); //기본 생성자 메서드가 자동 호출
+//        frame.setTitle("나의 첫 그래픽 프로그램"); //멤버변수가 title에 메서드로 문자열을 넣음.
+        //멤버변수를 직접 접근해서 값을 넣거나 꺼내거나 하는 작업을 잘하지 않음.
+        //set멤버변수이름, get멤버변수이름으로 메서드를 만들어서 멤버변수를 넣거나 꺼내는 작업을 하는 편.
+        //frame.title = "나의 첫 그래픽 프로그램";
+        JFrame frame = new JFrame("나의 첫 그래픽 프로그램");
+        frame.setSize(600, 500);
+        FlowLayout layout = new FlowLayout();
+        frame.setLayout(layout); //주소를 넣음.!!
+        JButton button = new JButton("1증가");
+        JButton button2 = new JButton("1감소");
+        JButton button3 = new JButton("0으로 초기화");
+        JLabel result = new JLabel("0"); //String.valueOf(0)
+
+        frame.add(button);
+        frame.add(button3);
+        frame.add(button2);
+        frame.add(result);
+
+        //글자를 키우자.
+        Font font = new Font("궁서", Font.BOLD, 40);
+        button.setFont(font);
+        button2.setFont(font);
+        button3.setFont(font);
+        result.setFont(new Font("궁서", Font.ITALIC, 400));
+
+        //색을 넣어보자. 배경색 + 글자색
+        button.setBackground(Color.RED);
+        button2.setBackground(Color.BLUE);
+        button.setForeground(Color.YELLOW);
+        button2.setForeground(Color.YELLOW);
+        button3.setBackground(Color.GREEN);
+        button3.setForeground(Color.YELLOW);
+        result.setForeground(Color.RED);
+
+        //맥유저는 넣어주세요.
+        button.setOpaque(true);
+        button2.setOpaque(true);
+
+        //버튼 이벤트 처리해보자.(인터페이스 사용)
+        button.addActionListener(new EventProcess());
+        button2.addActionListener(new EventProcess());
+
+        //위 설정대로 하면에 보여주세요!! 맨 끝에 위치해야함.
+        frame.setVisible(true);
+    }
+}
+
+class EventProcess implements ActionListener {
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println("클릭했음.");
+        JOptionPane.showMessageDialog(null, "클릭했음.");
+    }
+}
+```
+
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/6ac38442-82f3-41af-80c2-195a01293305" />
+
+```
+package test;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+//import java.awt.point.*;
+
+public class Graphic2_2 {
+    //static main안에서 사용할 변수이므로 똑같이 static으로 선언
+    static int count = 0;
+    public static void main(String[] args) {
+        //필요한 객체 ram에 가져다 두어야함.
+//        JFrame frame = new JFrame(); //기본 생성자 메서드가 자동 호출
+//        frame.setTitle("나의 첫 그래픽 프로그램"); //멤버변수가 title에 메서드로 문자열을 넣음.
+        //멤버변수를 직접 접근해서 값을 넣거나 꺼내거나 하는 작업을 잘하지 않음.
+        //set멤버변수이름, get멤버변수이름으로 메서드를 만들어서 멤버변수를 넣거나 꺼내는 작업을 하는 편.
+        //frame.title = "나의 첫 그래픽 프로그램";
+        JFrame frame = new JFrame("나의 첫 그래픽 프로그램");
+        frame.setSize(600, 500);
+        FlowLayout layout = new FlowLayout();
+        frame.setLayout(layout); //주소를 넣음.!!
+        JButton button = new JButton("1증가");
+        JButton button2 = new JButton("1감소");
+        JButton button3 = new JButton("0으로 초기화");
+        JLabel result = new JLabel("0"); //String.valueOf(0)
+
+        frame.add(button);
+        frame.add(button3);
+        frame.add(button2);
+        frame.add(result);
+
+        //글자를 키우자.
+        Font font = new Font("궁서", Font.BOLD, 40);
+        button.setFont(font);
+        button2.setFont(font);
+        button3.setFont(font);
+        result.setFont(new Font("궁서", Font.ITALIC, 400));
+
+        //색을 넣어보자. 배경색 + 글자색
+        button.setBackground(Color.RED);
+        button2.setBackground(Color.BLUE);
+        button.setForeground(Color.YELLOW);
+        button2.setForeground(Color.YELLOW);
+        button3.setBackground(Color.GREEN);
+        button3.setForeground(Color.YELLOW);
+        result.setForeground(Color.RED);
+
+        //맥유저는 넣어주세요.
+        button.setOpaque(true);
+        button2.setOpaque(true);
+
+        //버튼 이벤트 처리해보자.(인터페이스+익명객체 사용)
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                count++;
+                result.setText(count + "");
+            }
+        });
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                count--;
+                result.setText(count + "");
+            }
+        });
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                count = 0;
+                result.setText(count + "");
+            }
+        });
+
+        //위 설정대로 하면에 보여주세요!! 맨 끝에 위치해야함.
+        frame.setVisible(true);
+    }
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
