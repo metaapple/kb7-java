@@ -321,16 +321,18 @@ IntelliJ에서 각 `main()` 클래스 우클릭 → Run.
 
 <hr>
 <br>
+- 인터페이스 역할
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/e3cf0528-1477-4ca1-a01f-1ceff46dbb5d" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/164ee612-e424-45dc-bfec-2fbe91df0aa8" />
+- 인터페이스와 구현 클래스 선언
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/a14c6c90-5a68-45eb-86c8-9df8f4e8ff8c" />
 <img width="1670" height="942" alt="image" src="https://github.com/user-attachments/assets/b880cb7f-e385-4a1e-98f0-2f40a732f8f3" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/b9cfff3e-31ad-4c59-8e09-09b2a1fa5b54" />
-
+- 추상메서드
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/45c99082-866b-400a-b9f9-b4642d4e77ff" />
 <img width="1672" height="940" alt="image" src="https://github.com/user-attachments/assets/571e76e3-14b7-4858-af13-adca523344b0" />
-<img width="1672" height="940" alt="image" src="https://github.com/user-attachments/assets/10ed906d-981f-4ac5-9b0f-4b8b386b0b28" />
-<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/cccd0f45-b74b-479b-aa43-fddcda789ed4" />
+
+
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/b1048949-4375-4153-9285-5fb91f4ce361" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/6d774936-4ffb-415f-90ae-1e15f6a7e330" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/a5b4bfa4-5672-4456-a793-2afbcc54bd86" />
