@@ -322,7 +322,6 @@ IntelliJ에서 각 `main()` 클래스 우클릭 → Run.
 <hr>
 <br>
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/e3cf0528-1477-4ca1-a01f-1ceff46dbb5d" />
-<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/0bc36c3e-cbb1-44c0-8825-393b9c78a4d1" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/164ee612-e424-45dc-bfec-2fbe91df0aa8" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/a14c6c90-5a68-45eb-86c8-9df8f4e8ff8c" />
 
