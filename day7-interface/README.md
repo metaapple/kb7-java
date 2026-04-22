@@ -335,7 +335,6 @@ IntelliJ에서 각 `main()` 클래스 우클릭 → Run.
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/6d774936-4ffb-415f-90ae-1e15f6a7e330" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/a5b4bfa4-5672-4456-a793-2afbcc54bd86" />
 <img width="1671" height="941" alt="image" src="https://github.com/user-attachments/assets/af487105-391b-4408-8d37-6b205e7a91a8" />
-<img width="1671" height="941" alt="image" src="https://github.com/user-attachments/assets/cfda2cb5-ffd1-4d6e-b19c-739b08524075" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/216eee16-8a08-4e7e-9187-092670b7e342" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/2eaf9e6f-b313-43c7-8081-10f620b468de" />
 
