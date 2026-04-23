@@ -251,9 +251,9 @@ IntelliJ에서 각 `main()` 클래스 우클릭 → Run.
 
 <br>
 <hr>
-- 하나의 프로젝트안에서 모듈 별 구현 가능하다.
+- 하나의 프로젝트안에서 모듈 별 구현 가능하다. <br>
 - 자바는 프로젝트를 다 완성하면 jar로 압축해서 서버로 파일을 옮긴다.
-<img width="2554" height="1418" alt="image" src="https://github.com/user-attachments/assets/f89444de-30a6-4cab-bec2-0c08c6754793" />
+
 <img width="2554" height="1418" alt="image" src="https://github.com/user-attachments/assets/0fd9604c-25f9-47a7-ae4b-aa588ca97a12" />
 <img width="2553" height="1425" alt="image" src="https://github.com/user-attachments/assets/efa24f0a-f31c-44c4-bf61-10afb57ffaa9" />
 
