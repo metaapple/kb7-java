@@ -190,9 +190,9 @@ public class Test3 {
 
 ```mermaid
 flowchart TD
-  A[Student.java] --> B[@NoArgsConstructor]
-  A --> C[@RequiredArgsConstructor]
-  A --> D[@Data]
+  A[Student.java] --> B["@NoArgsConstructor"]
+  A --> C["@RequiredArgsConstructor"]
+  A --> D["@Data"]
 
   B --> E[new Student()]
   C --> F[new Student(no)]
