@@ -342,8 +342,9 @@ IntelliJ에서 각 `main()` 클래스 우클릭 → Run.
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/2eaf9e6f-b313-43c7-8081-10f620b468de" />
 <img width="2410" height="859" alt="image" src="https://github.com/user-attachments/assets/547d9dc2-b48f-4667-9c1c-7c7f1d6cc519" />
 - 중첩객체
-1. 인스턴스 멤버 클래스(Inner Class)는 외부 클래스의 인스턴스 상태(필드/메서드)에 강하게 의존할 때 사용하는 것이 핵심
-2. 즉, "혼자 존재하면 의미 없고, 반드시 바깥 객체에 붙어 있어야 하는 객체"일 때 적합
+<br>
+1. 인스턴스 멤버 클래스(Inner Class)는 외부 클래스의 인스턴스 상태(필드/메서드)에 강하게 의존할 때 사용하는 것이 핵심<br>
+2. 즉, "혼자 존재하면 의미 없고, 반드시 바깥 객체에 붙어 있어야 하는 객체"일 때 적합<br>
 <img width="1672" height="940" alt="image" src="https://github.com/user-attachments/assets/780b6526-d05b-4776-b16b-e10ad9de3c84" />
 <img width="1223" height="856" alt="image" src="https://github.com/user-attachments/assets/27293c11-e119-42be-a2b0-d19e456df784" />
 <img width="938" height="407" alt="image" src="https://github.com/user-attachments/assets/c4a90cb8-12eb-499f-982c-cd1887bb2fb7" />
