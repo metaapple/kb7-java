@@ -222,4 +222,646 @@ IntelliJ에서 각 `main()` 클래스 우클릭 → Run.
 - `test.Test1` 실행: try-catch 흐름 확인
 - `test.Test2` 실행: `FileWriter`로 `test.txt` 생성 + 예외/ finally 흐름 확인
 - `test.Test3` 실행: try-with-resources로 자동 close 확인
+<br>
+<br>
+- 인텔리제이 auto import 설정
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/375bad67-23d3-4f55-8cf0-3522078d436f" />
+- jdk17 라이브러리 api문서 : https://docs.oracle.com/en/java/javase/17/docs/api/index.html
+<br>
+<hr>
+<br>
+- 예외처리
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f80e68ad-691a-4b20-b647-3322cf2aed85" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/2877dc1e-a5e1-4d0a-b0c3-8319b3cc6a98" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/4c67faa2-e375-4f90-8ed2-d9e3a1fe8e41" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/22316b0f-b331-4ef4-a4ba-43b56d54f9d1" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/c5283a8a-1c6b-49f8-8e85-285c6f392d40" />
+<img width="1622" height="970" alt="image" src="https://github.com/user-attachments/assets/dbc56adf-5e01-4c76-a569-13a4ecfded54" />
+<img width="1631" height="964" alt="image" src="https://github.com/user-attachments/assets/bc1a5c3b-5b82-4c31-88a6-622e90d84afd" />
+<img width="1619" height="971" alt="image" src="https://github.com/user-attachments/assets/a7e334d4-fcf6-4873-ac92-c9af24c2ce1d" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/fe9ced24-cb24-434a-a13c-395db014d123" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/20cabba5-2f4f-4081-8a1a-4b641f6249a2" />
+<br>
+- 인텔리제이에서 try-catch자동생성
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/9ebd3e6b-85b2-43ee-981e-c735c6064250" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/e14ab384-34c5-4477-8796-99910727283a" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/9cd1efc3-805c-4de2-88f3-b78c4b8d8692" />
+
+
+<br>
+<hr>
+- 하나의 프로젝트안에서 모듈 별 구현 가능하다.
+- 자바는 프로젝트를 다 완성하면 jar로 압축해서 서버로 파일을 옮긴다.
+<img width="2554" height="1418" alt="image" src="https://github.com/user-attachments/assets/f89444de-30a6-4cab-bec2-0c08c6754793" />
+<img width="2554" height="1418" alt="image" src="https://github.com/user-attachments/assets/0fd9604c-25f9-47a7-ae4b-aa588ca97a12" />
+<img width="2553" height="1425" alt="image" src="https://github.com/user-attachments/assets/efa24f0a-f31c-44c4-bf61-10afb57ffaa9" />
+
+
+- 회사에서 사용할 라이브러리 만들기
+--> 모듈만들기(jar파일로 묶어야함.) --> 사용하기
+
+```
+모듈만들기(jar파일로 묶어야함.) --> 사용하기package test;
+
+// day8-libs 프로젝트 아래 test패키지
+package test;
+
+public class Cal {
+    public void add(int a, int b) {
+        int c = a + b;
+        System.out.println(c);
+    }
+
+    public void sub(int a, int b) {
+        int c = a - b;
+        System.out.println(c);
+    }
+}
+
+// -----------------------------------
+
+package test;
+
+public class Cal2 {
+    public void mul(int a, int b) {
+        int c = a * b;
+        System.out.println(c);
+    }
+
+    public void div(int a, int b) {
+        int c = a / b;
+        System.out.println(c);
+    }
+}
+
+//day8-lib 프로젝트 아래 test패키지
+
+
+public class LibTest {
+    public static void main(String[] args) {
+        Cal cal = new Cal();
+        cal.add(100, 200);
+        Cal2 cal2 = new Cal2();
+        cal2.mul(100, 200);
+    }
+}
+
+```
+
+<img width="1996" height="1952" alt="image" src="https://github.com/user-attachments/assets/e9a85b2c-06ce-4c82-9550-f192fa258ff0" />
+<img width="3828" height="2062" alt="image" src="https://github.com/user-attachments/assets/d9f90223-5759-4fa1-9324-efbf28536e14" />
+--> 다른 프로젝트에서 사용
+<img width="1997" height="1951" alt="image" src="https://github.com/user-attachments/assets/e38c0dfe-9169-45ae-9b49-2127abe72220" />
+<img width="994" height="614" alt="image" src="https://github.com/user-attachments/assets/c2d3d3d7-ec9c-47f5-b441-138ce0857bff" />
+<img width="2580" height="2071" alt="image" src="https://github.com/user-attachments/assets/1b9dbeac-dfd3-4790-bb8e-cbde1f05191f" />
+<img width="960" height="441" alt="image" src="https://github.com/user-attachments/assets/eec9cc23-0efa-4dab-a3ee-5419e4d45b01" />
+<img width="3239" height="1338" alt="image" src="https://github.com/user-attachments/assets/984b779a-126b-4264-a032-d9bb2d50077b" />
+
+<br>
+- 롬복라이브러리
+--> 클래스의 기본 구조에 해당하는 메서드를 자동으로 생성해줌
+--> 다운로드 : https://mvnrepository.com/artifact/org.projectlombok/lombok/1.18.40
+--> 현재 우리가 사용하는 버전에서는 @NoArgsConstructor, @AllArgsConstructor와 함께 @Data를 사용하는 경우 기본 생성자만 만들어집니다.
+--> 함께 사용하는 경우 별도로 @RequiredArgsConstructor를 명시해주세요.!!
+<img width="2286" height="1307" alt="image" src="https://github.com/user-attachments/assets/1dcdef0a-a628-4615-ad37-a3d9dbc19d92" />
+<img width="44" height="44" alt="image" src="https://github.com/user-attachments/assets/dc871793-5a37-4440-8e2e-f57bfaab583b" />
+<img width="2350" height="1846" alt="image" src="https://github.com/user-attachments/assets/81144ea1-d179-48c2-9690-ed327caeee59" />
+<img width="3694" height="1926" alt="image" src="https://github.com/user-attachments/assets/855d48fc-260a-4fbe-a022-187e73393829" />
+
+```
+
+package test;
+
+import lombok.*;
+
+@ToString
+@Data
+@AllArgsConstructor
+@RequiredArgsConstructor
+public class Bag {
+
+    @NonNull
+    private String name;
+    private String description;
+    private double price;
+}
+
+--------------------------
+
+package test;
+
+
+public class LombokTest {
+    public static void main(String[] args) {
+        Bag bag = new Bag("홍길동",
+                "목요일이야",
+                1000);
+
+        System.out.println(bag.getName());
+        bag.setName("김길동");
+        System.out.println(bag);
+
+
+    }
+}
+
+```
+- record도 일부 자동생성해주는 기능이 있음. 메서드이름이 약간 다름
+<img width="3441" height="1925" alt="image" src="https://github.com/user-attachments/assets/58a309a5-f962-4eef-b83d-085a73259bf8" />
+
+```
+package test;
+
+public record MemberRecord(String id, String name, int age) {
+}
+
+-----------------------
+package test;
+
+public class MemberRecordUse {
+    public static void main(String[] args) {
+        MemberRecord m1 = new MemberRecord("winter", "눈송이", 25);
+        MemberRecord m2 = new MemberRecord("winter", "눈송이", 25);
+
+        System.out.println(m1.id());
+        System.out.println(m1.name());
+        System.out.println(m1.age());
+        System.out.println(m1);
+        System.out.println("equals: " + m1.equals(m2));
+        System.out.println("hashCode 비교: " + (m1.hashCode() == m2.hashCode()));
+    }
+}
+
+```
+
+
+- 대표적인 라이브러리
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/194af064-0fd5-46f6-8571-361eb2a71f25" />
+<br>
+- System.nanoTime()을 이용한 성능평가(배열과 List비교)
+
+```
+System.nanoTime()을 이용한 성능평가(배열과 List비교)
+package test;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class TimeCompareTest {
+
+    public static void main(String[] args) {
+
+        final int SIZE = 100000;
+
+        // =========================
+        // 1. 배열
+        // =========================
+        int[] arr = new int[SIZE];
+
+        long start = System.nanoTime();
+
+        // 값 넣기
+        for (int i = 0; i < SIZE; i++) {
+            arr[i] = i;
+        }
+
+        long end = System.nanoTime();
+        System.out.println("배열 입력 시간: " + (end - start));
+
+        start = System.nanoTime();
+
+        // 조회
+        int sum = 0;
+        for (int i = 0; i < SIZE; i++) {
+            sum += arr[i];
+        }
+
+        end = System.nanoTime();
+        System.out.println("배열 조회 시간: " + (end - start));
+
+
+        // =========================
+        // 2. ArrayList
+        // =========================
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        start = System.nanoTime();
+
+        // 추가
+        for (int i = 0; i < SIZE; i++) {
+            arrayList.add(i);
+        }
+
+        end = System.nanoTime();
+        System.out.println("ArrayList 추가 시간: " + (end - start));
+
+        start = System.nanoTime();
+
+        // 조회
+        sum = 0;
+        for (int i = 0; i < SIZE; i++) {
+            sum += arrayList.get(i);
+        }
+
+        end = System.nanoTime();
+        System.out.println("ArrayList 조회 시간: " + (end - start));
+
+
+        // =========================
+        // 3. LinkedList
+        // =========================
+        LinkedList<Integer> linkedList = new LinkedList<>();
+
+        start = System.nanoTime();
+
+        // 추가
+        for (int i = 0; i < SIZE; i++) {
+            linkedList.add(i);
+        }
+
+        end = System.nanoTime();
+        System.out.println("LinkedList 추가 시간: " + (end - start));
+
+        start = System.nanoTime();
+
+        // 조회 (⚠️ 매우 느림)
+        sum = 0;
+        for (int i = 0; i < SIZE; i++) {
+            sum += linkedList.get(i);
+        }
+
+        end = System.nanoTime();
+        System.out.println("LinkedList 조회 시간: " + (end - start));
+    }
+}
+
+```
+<br>
+- 그래프로 비교
+
+```
+import java.util.*;
+
+public class SimpleGraphTest {
+
+    public static void main(String[] args) {
+
+        int size = 100000;
+
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        LinkedList<Integer> linkedList = new LinkedList<>();
+
+        // 데이터 채우기
+        for (int i = 0; i < size; i++) {
+            arrayList.add(i);
+            linkedList.add(i);
+        }
+
+        // =====================
+        // 측정
+        // =====================
+        long start = System.nanoTime();
+        arrayList.get(size / 2);
+        long arrayTime = System.nanoTime() - start;
+
+        start = System.nanoTime();
+        linkedList.get(size / 2);
+        long linkedTime = System.nanoTime() - start;
+
+        // =====================
+        // 그래프 출력
+        // =====================
+        printGraph("ArrayList", arrayTime);
+        printGraph("LinkedList", linkedTime);
+    }
+
+    public static void printGraph(String name, long time) {
+        int length = (int)(time / 1000); // scale
+
+        System.out.printf("%-12s | ", name);
+        for (int i = 0; i < length; i++) {
+            System.out.print("■");
+        }
+        System.out.println(" " + time + " ns");
+    }
+}
+
+
+ArrayList   | ■■■■■ 5000 ns
+LinkedList  | ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 500000 ns
+
+```
+<br>
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/1c9fcf78-8342-466d-bd13-033d3a33f7d0" />
+
+<br>
+- 래퍼클래스(포장클래스) : 형변환 + 포장클래스(클래스 <--- 박싱/언박싱 ---> 기본형)
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/c9bed3d2-4aaa-4d1b-96e4-d1c92ddd34f4" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f363793d-49d8-4957-a7b6-452c0e3859f9" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/b4bcc342-3749-4414-ba8b-eb087055b39a" />
+- Wrapper class주의점
+- Integer는 immutable (불변 객체)
+
+```
+Wrapper class주의점
+Integer는 immutable (불변 객체)
+package test;
+
+public class ValueComparePractice {
+    public static void main(String[] args) {
+        //-128~127범위가 아니므로 각각 주소를 만든다.
+        Integer a = 300;
+        Integer b = 300;
+        System.out.println(a.intValue());
+        System.out.println("300 비교");
+        System.out.println("주소 비교 == : " + (a == b)); //false
+        System.out.println("값 비교 equals : " + a.equals(b)); //true
+        System.out.println("a identityHashCode: " + System.identityHashCode(a));
+        System.out.println("b identityHashCode: " + System.identityHashCode(b));
+        System.out.println("\n값 변경 후");
+        a =  100;
+        System.out.println("주소 비교 == : " + (a == b)); //false
+        System.out.println("a identityHashCode: " + System.identityHashCode(a));
+        System.out.println("b identityHashCode: " + System.identityHashCode(b));
+
+        System.out.println("======================");
+
+        //-128-127까지는 클래스로 저장시 미리 넣어둠.
+        Integer c = 10;
+        Integer d = 10;
+        System.out.println("\n10 비교");
+        System.out.println("== : " + (c == d)); //true
+        System.out.println("equals : " + c.equals(d)); //true
+        System.out.println("c identityHashCode: " + System.identityHashCode(c));
+        System.out.println("d identityHashCode: " + System.identityHashCode(d));
+
+        System.out.println("\n값 변경 후");
+        c = 100;
+        System.out.println("== : " + (c == d)); //false
+        System.out.println("equals : " + c.equals(d)); //false
+        System.out.println("초기 상태");
+        System.out.println("c identityHashCode: " + System.identityHashCode(c));
+        System.out.println("d identityHashCode: " + System.identityHashCode(d));
+        }
+}
+
+
+```
+<br>
+<img width="814" height="1386" alt="image" src="https://github.com/user-attachments/assets/b9281d42-cbd5-472c-b494-45dfa81d2819" />
+
+
+
+<br>
+- StringBuilder
+
+```
+StringBuilder
+public class StringBuilderPractice {
+    public static void main(String[] args) {
+        String result = new StringBuilder()
+                .append("World")
+                .insert(0, "Hello ")
+                .replace(6, 11, "Java")
+                .toString();
+
+        System.out.println(result);
+    }
+}
+
+```
+<br>
+- StringTokenizer
+```
+import java.util.StringTokenizer;
+
+public class TokenPractice {
+    public static void main(String[] args) {
+        String data1 = "홍길동&이수홍,박연수";
+        String[] arr = data1.split("&|,");
+
+        System.out.println("[split 결과]");
+        for (String name : arr) {
+            System.out.println(name);
+        }
+
+        System.out.println();
+
+        String data2 = "홍길동/이수홍/박연수";
+        StringTokenizer st = new StringTokenizer(data2, "/");
+
+        System.out.println("[StringTokenizer 결과]");
+        while (st.hasMoreTokens()) {
+            System.out.println(st.nextToken());
+        }
+    }
+}
+
+```
+
+<br>
+
+- LocalDateTime
+
+```
+LocalDateTime
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+import java.time.format.DateTimeFormatter;
+
+public class DateTimeComparePractice {
+    public static void main(String[] args) {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy.MM.dd a HH:mm:ss");
+
+        LocalDateTime start = LocalDateTime.of(2026, 4, 1, 9, 0, 0);
+        LocalDateTime end = LocalDateTime.of(2026, 12, 31, 18, 0, 0);
+
+        System.out.println("시작: " + start.format(dtf));
+        System.out.println("종료: " + end.format(dtf));
+
+        if (start.isBefore(end)) {
+            System.out.println("종료일 전입니다.");
+        } else if (start.isEqual(end)) {
+            System.out.println("같은 시각입니다.");
+        } else {
+            System.out.println("종료일이 지났습니다.");
+        }
+
+        System.out.println("남은 월: " + start.until(end, ChronoUnit.MONTHS));
+        System.out.println("남은 일: " + start.until(end, ChronoUnit.DAYS));
+        System.out.println("남은 시간: " + start.until(end, ChronoUnit.HOURS));
+    }
+}
+```
+```
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class DateTimeOperationPractice {
+    public static void main(String[] args) {
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy.MM.dd a HH:mm:ss");
+
+        System.out.println("현재 시간: " + now.format(dtf));
+        System.out.println("1년 후: " + now.plusYears(1).format(dtf));
+        System.out.println("2개월 전: " + now.minusMonths(2).format(dtf));
+        System.out.println("7일 후: " + now.plusDays(7).format(dtf));
+    }
+}
+
+```
+<br>
+- TimeZone
+
+```
+import java.util.Calendar;
+import java.util.TimeZone;
+
+public class TimeZonePractice {
+    public static void main(String[] args) {
+        // 대한민국 시간대
+        TimeZone timeZone = TimeZone.getTimeZone("Asia/Seoul");
+        Calendar now = Calendar.getInstance(timeZone);
+
+        String amPm = now.get(Calendar.AM_PM) == Calendar.AM ? "오전" : "오후";
+
+        System.out.println("대한민국 현재 시간");
+        System.out.println(amPm + " " +
+                now.get(Calendar.HOUR) + "시 " +
+                now.get(Calendar.MINUTE) + "분 " +
+                now.get(Calendar.SECOND) + "초");
+    }
+}
+```
+<br>
+
+- Calender
+
+```
+import java.util.Calendar;
+
+public class CalendarPractice {
+    public static void main(String[] args) {
+        Calendar now = Calendar.getInstance();
+
+        int year = now.get(Calendar.YEAR);
+        int month = now.get(Calendar.MONTH) + 1;
+        int day = now.get(Calendar.DAY_OF_MONTH);
+        int week = now.get(Calendar.DAY_OF_WEEK);
+        int amPm = now.get(Calendar.AM_PM);
+        int hour = now.get(Calendar.HOUR);
+        int minute = now.get(Calendar.MINUTE);
+
+        String weekName;
+        switch (week) {
+            case Calendar.MONDAY -> weekName = "월";
+            case Calendar.TUESDAY -> weekName = "화";
+            case Calendar.WEDNESDAY -> weekName = "수";
+            case Calendar.THURSDAY -> weekName = "목";
+            case Calendar.FRIDAY -> weekName = "금";
+            case Calendar.SATURDAY -> weekName = "토";
+            default -> weekName = "일";
+        }
+
+        String amPmText = (amPm == Calendar.AM) ? "오전" : "오후";
+
+        System.out.println(year + "년 " + month + "월 " + day + "일");
+        System.out.println("요일: " + weekName);
+        System.out.println(amPmText + " " + hour + "시 " + minute + "분");
+    }
+}
+
+```
+<br>
+
+- Date
+
+```
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DatePractice {
+    public static void main(String[] args) {
+        Date now = new Date();
+
+        // 기본 출력
+        System.out.println(now.toString());
+
+        // 포맷 출력
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
+        System.out.println(sdf.format(now));
+
+        // ⭐ Date 기본 메서드들
+        System.out.println("\n[Date 기본 메서드]");
+
+        System.out.println("연도: " + (now.getYear() + 1900)); // 1900 기준이라 보정 필요
+        System.out.println("월: " + (now.getMonth() + 1));    // 0부터 시작이라 +1
+        System.out.println("일: " + now.getDate());
+
+        System.out.println("시간: " + now.getHours());
+        System.out.println("분: " + now.getMinutes());
+        System.out.println("초: " + now.getSeconds());
+    }
+}
+
+```
+<br>
+
+- Random
+
+```
+import java.util.Arrays;
+import java.util.Random;
+
+public class RandomLottoPractice {
+    public static void main(String[] args) {
+        int[] selectNumber = new int[6];
+        int[] winningNumber = new int[6];
+
+        Random random = new Random(3);
+        for (int i = 0; i < 6; i++) {
+            selectNumber[i] = random.nextInt(45) + 1;
+        }
+
+        random = new Random(5);
+        for (int i = 0; i < 6; i++) {
+            winningNumber[i] = random.nextInt(45) + 1;
+        }
+
+        Arrays.sort(selectNumber);
+        Arrays.sort(winningNumber);
+
+        System.out.println("선택번호: " + Arrays.toString(selectNumber));
+        System.out.println("당첨번호: " + Arrays.toString(winningNumber));
+        System.out.println("일치 여부: " + Arrays.equals(selectNumber, winningNumber));
+    }
+}
+
+```
+<br>
+
+- Math
+
+```
+Math
+public class MathPractice {
+    public static void main(String[] args) {
+        System.out.println("ceil(5.3) = " + Math.ceil(5.3));
+        System.out.println("floor(5.3) = " + Math.floor(5.3));
+        System.out.println("max(3, 7) = " + Math.max(3, 7));
+        System.out.println("min(3, 7) = " + Math.min(3, 7));
+
+        double value = 12.3456;
+        double rounded = Math.round(value * 100) / 100.0;
+        System.out.println("소수 둘째 자리 반올림: " + rounded);
+    }
+}
+
+```
+<br>
+
+
+
+
 
