@@ -190,13 +190,13 @@ public class Test3 {
 
 ```mermaid
 flowchart TD
-  A[Student.java] --> B["@NoArgsConstructor"]
+  A["Student.java"] --> B["@NoArgsConstructor"]
   A --> C["@RequiredArgsConstructor"]
   A --> D["@Data"]
 
-  B --> E[new Student()]
-  C --> F[new Student(no)]
-  D --> G[s.setNo(...), s.setName(...)]
+  B --> E["new Student()"]
+  C --> F["new Student(no)"]
+  D --> G["s.setNo(...)\ns.setName(...)"]
   D --> H["System.out.println(s)\n(toString 호출)"]
 ```
 
