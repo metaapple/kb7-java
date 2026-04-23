@@ -233,7 +233,6 @@ IntelliJ에서 각 `main()` 클래스 우클릭 → Run.
 <br>
 - 예외처리
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f80e68ad-691a-4b20-b647-3322cf2aed85" />
-<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/2877dc1e-a5e1-4d0a-b0c3-8319b3cc6a98" />
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/4c67faa2-e375-4f90-8ed2-d9e3a1fe8e41" />
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/22316b0f-b331-4ef4-a4ba-43b56d54f9d1" />
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/c5283a8a-1c6b-49f8-8e85-285c6f392d40" />
