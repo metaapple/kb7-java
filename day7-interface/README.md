@@ -511,6 +511,10 @@ public class Graphic2_2 {
 
 ```
 
+- 요약
+<img width="2555" height="1430" alt="image" src="https://github.com/user-attachments/assets/629a8206-b720-48c5-8d32-c69fedaac7fe" />
+
+
 
 
 
