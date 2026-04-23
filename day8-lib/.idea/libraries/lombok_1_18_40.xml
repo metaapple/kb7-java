@@ -1,7 +1,6 @@
 <component name="libraryTable">
-  <library name="day8-libs-1.0-SNAPSHOT">
+  <library name="lombok-1.18.40">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../day8-libs/build/libs/day8-libs-1.0-SNAPSHOT.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/lombok-1.18.40.jar!/" />
     </CLASSES>
     <JAVADOC />
