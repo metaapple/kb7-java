@@ -226,6 +226,7 @@ IntelliJ에서 각 `main()` 클래스 우클릭 → Run.
 <br>
 - 인텔리제이 auto import 설정
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/375bad67-23d3-4f55-8cf0-3522078d436f" />
+<hr>
 - jdk17 라이브러리 api문서 : https://docs.oracle.com/en/java/javase/17/docs/api/index.html
 <br>
 <hr>
