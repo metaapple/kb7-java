@@ -5,35 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c64935b-cd91-4dfc-93d1-5cf9b23b7a74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/libs/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/StudentUse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/day8_libs_1_0_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day8-lib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day8-lib.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Bag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LibTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LombokTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/MemberRecord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/MemberRecordUse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TimeCompareTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/ValueComparePractice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/src/main/java/test/Cal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8-libs/src/main/java/test/Cal2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +60,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
@@ -176,7 +149,7 @@
       <option name="presentableId" value="Default" />
       <updated>1776910791444</updated>
       <workItem from="1776910792517" duration="5065000" />
-      <workItem from="1776919180550" duration="1405000" />
+      <workItem from="1776919180550" duration="1992000" />
     </task>
     <servers />
   </component>
