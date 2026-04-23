@@ -197,7 +197,7 @@ flowchart TD
   B --> E[new Student()]
   C --> F[new Student(no)]
   D --> G[s.setNo(...), s.setName(...)]
-  D --> H[println(s) -> toString()]
+  D --> H["System.out.println(s)\n(toString 호출)"]
 ```
 
 #### 2) try-catch-finally 실행 흐름
