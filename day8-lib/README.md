@@ -601,7 +601,6 @@ public class ValueComparePractice {
         c = 100;
         System.out.println("== : " + (c == d)); //false
         System.out.println("equals : " + c.equals(d)); //false
-        System.out.println("초기 상태");
         System.out.println("c identityHashCode: " + System.identityHashCode(c));
         System.out.println("d identityHashCode: " + System.identityHashCode(d));
         }
