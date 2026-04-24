@@ -318,13 +318,16 @@ public class LibTest {
 <img width="3239" height="1338" alt="image" src="https://github.com/user-attachments/assets/984b779a-126b-4264-a032-d9bb2d50077b" />
 
 <br>
+
+<img width="2286" height="1307" alt="image" src="https://github.com/user-attachments/assets/1dcdef0a-a628-4615-ad37-a3d9dbc19d92" />
+<img width="44" height="44" alt="image" src="https://github.com/user-attachments/assets/dc871793-5a37-4440-8e2e-f57bfaab583b" />
+
+<br>
 - 롬복라이브러리 <br>
 --> 클래스의 기본 구조에 해당하는 메서드를 자동으로 생성해줌<br>
 --> 다운로드 : https://mvnrepository.com/artifact/org.projectlombok/lombok/1.18.40<br>
 --> 현재 우리가 사용하는 버전에서는 @NoArgsConstructor, @AllArgsConstructor와 함께 @Data를 사용하는 경우 기본 생성자만 만들어집니다.<br>
 --> 함께 사용하는 경우 별도로 @RequiredArgsConstructor를 명시해주세요.!!<br>
-<img width="2286" height="1307" alt="image" src="https://github.com/user-attachments/assets/1dcdef0a-a628-4615-ad37-a3d9dbc19d92" />
-<img width="44" height="44" alt="image" src="https://github.com/user-attachments/assets/dc871793-5a37-4440-8e2e-f57bfaab583b" />
 <img width="2350" height="1846" alt="image" src="https://github.com/user-attachments/assets/81144ea1-d179-48c2-9690-ed327caeee59" />
 <img width="3694" height="1926" alt="image" src="https://github.com/user-attachments/assets/855d48fc-260a-4fbe-a022-187e73393829" />
 
