@@ -404,7 +404,6 @@ public class MemberRecordUse {
 - System.nanoTime()을 이용한 성능평가(배열과 List비교)
 
 ```
-System.nanoTime()을 이용한 성능평가(배열과 List비교)
 package test;
 
 import java.util.ArrayList;
