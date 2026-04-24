@@ -559,7 +559,7 @@ LinkedList  | ■■■■■■■■■■■■■■■■■■■■■■
 <br>
 - 래퍼클래스(포장클래스) : 형변환 + 포장클래스(클래스 <--- 박싱/언박싱 ---> 기본형)
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/c9bed3d2-4aaa-4d1b-96e4-d1c92ddd34f4" />
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f363793d-49d8-4957-a7b6-452c0e3859f9" />
+
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/b4bcc342-3749-4414-ba8b-eb087055b39a" />
 - Wrapper class주의점
 - Integer는 immutable (불변 객체)
