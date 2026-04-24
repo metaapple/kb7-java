@@ -617,7 +617,7 @@ public class ValueComparePractice {
 - StringBuilder
 
 ```
-StringBuilder
+
 public class StringBuilderPractice {
     public static void main(String[] args) {
         String result = new StringBuilder()
@@ -631,9 +631,13 @@ public class StringBuilderPractice {
 }
 
 ```
+
 <br>
+
 - StringTokenizer
+  
 ```
+
 import java.util.StringTokenizer;
 
 public class TokenPractice {
@@ -665,7 +669,7 @@ public class TokenPractice {
 - LocalDateTime
 
 ```
-LocalDateTime
+
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.time.format.DateTimeFormatter;
@@ -694,6 +698,7 @@ public class DateTimeComparePractice {
     }
 }
 ```
+
 ```
 
 import java.time.LocalDateTime;
@@ -712,10 +717,13 @@ public class DateTimeOperationPractice {
 }
 
 ```
+
 <br>
+
 - TimeZone
 
 ```
+
 import java.util.Calendar;
 import java.util.TimeZone;
 
@@ -734,7 +742,9 @@ public class TimeZonePractice {
                 now.get(Calendar.SECOND) + "초");
     }
 }
+
 ```
+
 <br>
 
 - Calender
@@ -774,6 +784,7 @@ public class CalendarPractice {
 }
 
 ```
+
 <br>
 
 - Date
@@ -807,6 +818,7 @@ public class DatePractice {
 }
 
 ```
+
 <br>
 
 - Random
@@ -840,12 +852,13 @@ public class RandomLottoPractice {
 }
 
 ```
+
 <br>
 
 - Math
 
 ```
-Math
+
 public class MathPractice {
     public static void main(String[] args) {
         System.out.println("ceil(5.3) = " + Math.ceil(5.3));
