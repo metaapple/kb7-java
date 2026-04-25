@@ -412,6 +412,9 @@ public class MemberRecordUse {
 <img width="729" height="345" alt="스크린샷 2026-04-25 22 48 04" src="https://github.com/user-attachments/assets/7d72e24a-159a-4985-ba84-a33aff87c25b" />
 <br>
 
+<img width="1102" height="429" alt="스크린샷 2026-04-25 22 55 48" src="https://github.com/user-attachments/assets/09b5f85c-9eb0-49ea-ba5a-0f63a7263cc9" />
+
+<br>
 ```
 package test;
 
