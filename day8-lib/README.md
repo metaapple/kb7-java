@@ -415,6 +415,7 @@ public class MemberRecordUse {
 <img width="1102" height="429" alt="스크린샷 2026-04-25 22 55 48" src="https://github.com/user-attachments/assets/09b5f85c-9eb0-49ea-ba5a-0f63a7263cc9" />
 
 <br>
+
 ```
 package test;
 
@@ -510,8 +511,11 @@ public class TimeCompareTest {
 }
 
 ```
+
 <br>
+
 - 그래프로 비교
+<br>
 
 ```
 import java.util.*;
@@ -565,6 +569,7 @@ ArrayList   | ■■■■■ 5000 ns
 LinkedList  | ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 500000 ns
 
 ```
+
 <br>
 <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/1c9fcf78-8342-466d-bd13-033d3a33f7d0" />
 
@@ -577,8 +582,8 @@ LinkedList  | ■■■■■■■■■■■■■■■■■■■■■■
 - Integer는 immutable (불변 객체)
 
 ```
-Wrapper class주의점
-Integer는 immutable (불변 객체)
+
+
 package test;
 
 public class ValueComparePractice {
@@ -620,6 +625,7 @@ public class ValueComparePractice {
 
 
 ```
+
 <br>
 <img width="814" height="1386" alt="image" src="https://github.com/user-attachments/assets/b9281d42-cbd5-472c-b494-45dfa81d2819" />
 
