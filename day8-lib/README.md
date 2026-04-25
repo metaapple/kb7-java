@@ -371,6 +371,8 @@ public class LombokTest {
 ```
 - record도 일부 자동생성해주는 기능이 있음. 메서드이름이 약간 다름
 <img width="3441" height="1925" alt="image" src="https://github.com/user-attachments/assets/58a309a5-f962-4eef-b83d-085a73259bf8" />
+<br>
+
 
 ```
 package test;
@@ -406,6 +408,9 @@ public class MemberRecordUse {
 
 <br>
 - System.nanoTime()을 이용한 성능평가(배열과 List비교)
+<br>
+<img width="729" height="345" alt="스크린샷 2026-04-25 22 48 04" src="https://github.com/user-attachments/assets/7d72e24a-159a-4985-ba84-a33aff87c25b" />
+<br>
 
 ```
 package test;
