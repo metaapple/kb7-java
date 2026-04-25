@@ -399,7 +399,11 @@ public class MemberRecordUse {
 
 
 - 대표적인 라이브러리
-<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/194af064-0fd5-46f6-8571-361eb2a71f25" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/194af064-0fd5-46f6-8571-361eb2a71f25" /> <br>
+<img width="1313" height="671" alt="스크린샷 2026-04-25 21 46 17" src="https://github.com/user-attachments/assets/2f97cc9a-fb61-4e0b-b363-9cec40d40744" />
+<img width="1289" height="328" alt="스크린샷 2026-04-25 21 46 48" src="https://github.com/user-attachments/assets/528d1a9f-ceb8-4d9a-9ff9-f311bde9ab17" />
+<img width="1008" height="299" alt="스크린샷 2026-04-25 21 47 10" src="https://github.com/user-attachments/assets/835cf891-00a5-4ac8-8c00-bd861812a19d" />
+
 <br>
 - System.nanoTime()을 이용한 성능평가(배열과 List비교)
 
