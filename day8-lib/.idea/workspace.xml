@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c64935b-cd91-4dfc-93d1-5cf9b23b7a74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/libs/CalendarPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/DateTimeComparePractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/DateTimeOperationPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/SimpleGraphTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/StringBuilderPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/TimeZonePractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/TokenPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/SetTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/SetTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/SetTest3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Student2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../study" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +29,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="13" />
+    <option name="cachedIndexableFilesCount" value="16" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,12 +47,12 @@
     &quot;assignee&quot;: &quot;metaapple&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/metaapple/KB7-java.git&quot;,
-    &quot;accountId&quot;: &quot;915b77d8-e6e6-4825-8a65-fad7b94263cd&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/metaapple/KB7-java.git",
+    "accountId": "f8fef5b3-48f8-4d47-a5a7-a0b84aadbfa0"
   }
-}</component>
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -54,19 +70,33 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CalendarPractice.executor": "Run",
+    "Application.DateTimeComparePractice.executor": "Run",
+    "Application.DateTimeOperationPractice.executor": "Run",
+    "Application.SetTest1.executor": "Run",
+    "Application.SetTest2.executor": "Run",
+    "Application.SetTest3.executor": "Run",
+    "Application.SimpleGraphTest.executor": "Run",
+    "Application.StringBuilderPractice.executor": "Run",
     "Application.StudentUse.executor": "Run",
     "Application.Test1.executor": "Run",
     "Application.Test2.executor": "Run",
+    "Application.TimeCompareTest.executor": "Run",
+    "Application.TimeZonePractice.executor": "Run",
+    "Application.TokenPractice.executor": "Run",
+    "Application.libs.SimpleGraphTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/administrator/Documents/kb7-java/day8-lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,19 +105,20 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="libs" />
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StudentUse">
-    <configuration name="StudentUse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="libs.StudentUse" />
+  <component name="RunManager" selected="Application.TimeZonePractice">
+    <configuration name="DateTimeComparePractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="libs.DateTimeComparePractice" />
       <module name="day8-lib" />
       <extension name="coverage">
         <pattern>
@@ -99,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Test1" />
+    <configuration name="DateTimeOperationPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="libs.DateTimeOperationPractice" />
       <module name="day8-lib" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="libs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,12 +143,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Test2" />
+    <configuration name="StringBuilderPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="libs.StringBuilderPractice" />
       <module name="day8-lib" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="libs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeZonePractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="libs.TimeZonePractice" />
+      <module name="day8-lib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="libs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TokenPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="libs.TokenPractice" />
+      <module name="day8-lib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="libs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,9 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StudentUse" />
-        <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.Test1" />
+        <item itemvalue="Application.TimeZonePractice" />
+        <item itemvalue="Application.TokenPractice" />
+        <item itemvalue="Application.StringBuilderPractice" />
+        <item itemvalue="Application.DateTimeOperationPractice" />
+        <item itemvalue="Application.DateTimeComparePractice" />
       </list>
     </recent_temporary>
   </component>
