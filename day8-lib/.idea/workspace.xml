@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c64935b-cd91-4dfc-93d1-5cf9b23b7a74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/BeepPrintExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TCPClients.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TCPServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/BankAccount2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/JoinExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/SumThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/SyncTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/ThreadRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ThreadRun.java" afterDir="false" />
     </list>
@@ -68,6 +70,7 @@
     "Application.CarGame.executor": "Run",
     "Application.DateTimeComparePractice.executor": "Run",
     "Application.DateTimeOperationPractice.executor": "Run",
+    "Application.JoinExample.executor": "Run",
     "Application.LibTest.executor": "Run",
     "Application.SetTest1.executor": "Run",
     "Application.SetTest2.executor": "Run",
@@ -80,7 +83,8 @@
     "Application.Test1.executor": "Run",
     "Application.Test2.executor": "Run",
     "Application.ThreadRun (1).executor": "Run",
-    "Application.ThreadRun.executor": "Debug",
+    "Application.ThreadRun (2).executor": "Run",
+    "Application.ThreadRun.executor": "Run",
     "Application.ThreadRun4.executor": "Run",
     "Application.TimeCompareTest.executor": "Run",
     "Application.TimeZonePractice.executor": "Run",
@@ -122,9 +126,9 @@
       <recent name="libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ThreadRun">
-    <configuration name="BeepPrintExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.BeepPrintExample" />
+  <component name="RunManager" selected="Application.SyncTest">
+    <configuration name="JoinExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.JoinExample" />
       <module name="day8-lib" />
       <extension name="coverage">
         <pattern>
@@ -136,21 +140,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TCPClients" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TCPClients" />
-      <module name="day8-lib" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TCPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TCPServer" />
+    <configuration name="SyncTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.SyncTest" />
       <module name="day8-lib" />
       <extension name="coverage">
         <pattern>
@@ -163,6 +154,19 @@
       </method>
     </configuration>
     <configuration name="ThreadRun (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.ThreadRun" />
+      <module name="day8-lib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadRun (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.ThreadRun" />
       <module name="day8-lib" />
       <extension name="coverage">
@@ -190,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ThreadRun" />
-        <item itemvalue="Application.BeepPrintExample" />
-        <item itemvalue="Application.TCPClients" />
-        <item itemvalue="Application.TCPServer" />
+        <item itemvalue="Application.SyncTest" />
+        <item itemvalue="Application.JoinExample" />
         <item itemvalue="Application.ThreadRun (1)" />
+        <item itemvalue="Application.ThreadRun (2)" />
+        <item itemvalue="Application.ThreadRun" />
       </list>
     </recent_temporary>
   </component>

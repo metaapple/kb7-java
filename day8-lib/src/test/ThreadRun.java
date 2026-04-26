@@ -42,6 +42,7 @@ public class ThreadRun extends JFrame {
             public void run() {
                 for (int i = 500; i > 0; i--) {
                     top.setText("Counter: " + i);
+                    System.out.println("현재 thread이름 : " + getName());
                     try {
                         Thread.sleep(500);
                     } catch (InterruptedException e) {
@@ -56,6 +57,7 @@ public class ThreadRun extends JFrame {
                 for (int i = 0; i < 300; i++) {
                     Date date = new Date();
                     sub.setText(String.valueOf(date));
+                    System.out.println("현재 thread이름 : " + getName());
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
@@ -72,6 +74,7 @@ public class ThreadRun extends JFrame {
                     //center.setText("이미지: " + img[i]);
                     ImageIcon icon = new ImageIcon(img[i]);
                     center.setIcon(icon);
+                    System.out.println("현재 thread이름 : " + getName());
                     try {
                         Thread.sleep(3000);
                     } catch (InterruptedException e) {
@@ -80,11 +83,10 @@ public class ThreadRun extends JFrame {
                 }
             }
         };
+
         counter.start();
         timer.start();
         img.start();
-
-
 
 
         setVisible(true);
