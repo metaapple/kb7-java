@@ -1064,6 +1064,15 @@ flowchart TD
   G --> H["중복 제거 실패 가능 / contains=false"]
 ```
 
+<br>
+<img width="546" height="419" alt="스크린샷 2026-04-26 18 40 02" src="https://github.com/user-attachments/assets/22e7b749-0972-40e7-8fc6-50f1004930bd" />
+<img width="1181" height="1331" alt="iOS 이미지" src="https://github.com/user-attachments/assets/b999d7a6-184d-44ed-aa0d-8d5fd1bdf698" />
+<img width="1536" height="1024" alt="iOS 이미지 (1)" src="https://github.com/user-attachments/assets/ee1a73b4-93c9-47ba-a717-2cf3138b97e8" />
+<img width="1536" height="1024" alt="iOS 이미지 (2)" src="https://github.com/user-attachments/assets/caba79f2-9783-4cf1-bc19-02b0a8f6ca16" />
+<img width="1619" height="972" alt="iOS 이미지 (3)" src="https://github.com/user-attachments/assets/b9d8d29e-b819-4246-afb6-c9e0a2844715" />
+<img width="1428" height="1101" alt="iOS 이미지 (4)" src="https://github.com/user-attachments/assets/280cde90-f2a8-451b-a97c-2a9a554e5d3b" />
+
+
 
 
 
