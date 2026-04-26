@@ -910,51 +910,55 @@ public class MathPractice {
 
 ### equals / hashCode (신규 추가)
 
-- `HashSet`은 `hashCode()`로 저장 위치를 먼저 찾고, 해시가 같을 때 `equals()`로 최종 중복 여부를 판단합니다.
-- 따라서 Set에서 값 기준 중복 제거를 원하면 두 메서드를 함께 오버라이드해야 합니다.
+- 아래 내용은 `src/test`의 `SetTest1`, `SetTest2`, `SetTest3`, `Student`, `Student2` 기준으로 정리했습니다.
+- 핵심은 `Set`이 중복 체크 시 `hashCode()` + `equals()`를 함께 사용한다는 점입니다.
 
 ```java
-package test;
+// SetTest1.java
+Set set = new HashSet();
+set.add("kim");
+set.add("park");
+set.add("kim");  // String은 equals/hashCode가 이미 구현되어 중복 제거됨
+```
 
-import java.util.Objects;
+```java
+// SetTest2.java + Student.java
+set.add(new Student("1", "홍길동"));
+set.add(new Student("2", "김길동"));
+set.add(new Student("1", "홍길동"));  // 중복 제거됨
+System.out.println(set.contains(new Student("1", "홍길동"))); // true
 
+// Student.java
+@Data
+public class Student {
+    @NonNull String id;
+    String name;
+}
+// @Data가 equals/hashCode를 자동 생성
+```
+
+```java
+// SetTest3.java + Student2.java
+set.add(new Student2("1", "홍길동"));
+set.add(new Student2("2", "김길동"));
+set.add(new Student2("1", "홍길동"));  // 기본 상태에서는 중복으로 들어감
+System.out.println(set.contains(new Student2("1", "홍길동"))); // false
+
+// Student2.java
 public class Student2 {
     String id;
     String name;
-
-    Student2(String id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (!(obj instanceof Student2 s)) return false;
-        return Objects.equals(this.id, s.id) && Objects.equals(this.name, s.name);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name);
-    }
-
-    @Override
-    public String toString() {
-        return id + " " + name;
-    }
+    // equals/hashCode 미구현(현재 파일 기준)
 }
 ```
 
 ```mermaid
 flowchart TD
-  A["Set.add(객체)"] --> B["hashCode 계산"]
-  B --> C{"같은 hash 버킷 존재?"}
-  C --> D["버킷 없음 -> 저장"]
-  C --> E["버킷 있음 -> equals 비교"]
-  E --> F{"equals == true?"}
-  F --> G["true -> 중복으로 판단, 저장 안 함"]
-  F --> H["false -> 저장"]
+  A["SetTest1: String add"] --> B["중복 제거 성공"]
+  C["SetTest2: Student add"] --> D["@Data로 equals/hashCode 자동 생성"]
+  D --> E["중복 제거 성공 / contains=true"]
+  F["SetTest3: Student2 add"] --> G["equals/hashCode 미구현"]
+  G --> H["중복 제거 실패 가능 / contains=false"]
 ```
 
 
