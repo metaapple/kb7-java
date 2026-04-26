@@ -1014,7 +1014,7 @@ public class Student2 {
 //        return result;
 //    }
 
-// //객체가 동일한지 비교할 때는 내부 필드의 값들이 들어있는 동일한지 비교해야함.
+// //객체가 동일한지 비교할 때는 내부 필드의 값들이 들어있는 위치가 동일한지 비교해야함.
 //    @Override
 //    public int hashCode() {
 //        return id.hashCode() + name.hashCode();
