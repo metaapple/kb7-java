@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c64935b-cd91-4dfc-93d1-5cf9b23b7a74" name="Changes" comment="" />
+    <list default="true" id="5c64935b-cd91-4dfc-93d1-5cf9b23b7a74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8-lib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day8-lib.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +58,7 @@
     "Application.CalendarPractice.executor": "Run",
     "Application.DateTimeComparePractice.executor": "Run",
     "Application.DateTimeOperationPractice.executor": "Run",
+    "Application.LibTest.executor": "Run",
     "Application.SetTest1.executor": "Run",
     "Application.SetTest2.executor": "Run",
     "Application.SetTest3.executor": "Run",
@@ -85,8 +89,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.1454219",
+    "project.structure.side.proportion": "0.30858085",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
@@ -98,9 +102,9 @@
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TimeZonePractice">
-    <configuration name="DateTimeComparePractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="libs.DateTimeComparePractice" />
+  <component name="RunManager" selected="Application.LibTest">
+    <configuration name="DateTimeOperationPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="libs.DateTimeOperationPractice" />
       <module name="day8-lib" />
       <extension name="coverage">
         <pattern>
@@ -112,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateTimeOperationPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="libs.DateTimeOperationPractice" />
+    <configuration name="LibTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.LibTest" />
       <module name="day8-lib" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="libs.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LibTest" />
         <item itemvalue="Application.TimeZonePractice" />
         <item itemvalue="Application.TokenPractice" />
         <item itemvalue="Application.StringBuilderPractice" />
         <item itemvalue="Application.DateTimeOperationPractice" />
-        <item itemvalue="Application.DateTimeComparePractice" />
       </list>
     </recent_temporary>
   </component>
