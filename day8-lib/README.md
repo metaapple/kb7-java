@@ -1,4 +1,4 @@
-# ☕ Java Basic Learning - Day 8 (라이브러리 Lombok, 예외처리)
+# ☕ Java Basic Learning - Day 8 (주요 라이브러리, Lombok, 예외처리)
 
 Day 8에서는 **외부 라이브러리(Lombok)** 를 사용해 `getter/setter/toString/생성자`를 자동 생성하고,  
 `try-catch-finally`와 **try-with-resources**로 예외처리 + 파일 쓰기(`FileWriter`)를 연습합니다.
