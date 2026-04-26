@@ -11,12 +11,25 @@ Day 8에서는 **외부 라이브러리(Lombok)** 를 사용해 `getter/setter/t
 day8-lib/
 ├── src/
 │   ├── libs/
-│   │   ├── Student.java        # Lombok으로 DTO(데이터 클래스) 만들기
-│   │   └── StudentUse.java     # Student 생성/출력 사용(main)
+│   │   ├── Student.java
+│   │   ├── StudentUse.java
+│   │   ├── TimeCompareTest.java
+│   │   ├── SimpleGraphTest.java
+│   │   ├── StringBuilderPractice.java
+│   │   ├── TokenPractice.java
+│   │   ├── DateTimeComparePractice.java
+│   │   ├── DateTimeOperationPractice.java
+│   │   ├── TimeZonePractice.java
+│   │   └── CalendarPractice.java
 │   └── test/
-│       ├── Test1.java          # try-catch 기본 흐름(main)
-│       ├── Test2.java          # FileWriter + 다중 catch + finally(main)
-│       └── Test3.java          # try-with-resources(main)
+│       ├── Test1.java
+│       ├── Test2.java
+│       ├── Test3.java
+│       ├── SetTest1.java
+│       ├── SetTest2.java
+│       ├── SetTest3.java
+│       ├── Student.java
+│       └── Student2.java
 ├── test.txt                    # 파일쓰기 결과(실행 후 생성/갱신)
 └── README.md
 ```
@@ -892,6 +905,58 @@ public class MathPractice {
 
 ```
 <br>
+
+<hr>
+
+### equals / hashCode (신규 추가)
+
+- `HashSet`은 `hashCode()`로 저장 위치를 먼저 찾고, 해시가 같을 때 `equals()`로 최종 중복 여부를 판단합니다.
+- 따라서 Set에서 값 기준 중복 제거를 원하면 두 메서드를 함께 오버라이드해야 합니다.
+
+```java
+package test;
+
+import java.util.Objects;
+
+public class Student2 {
+    String id;
+    String name;
+
+    Student2(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Student2 s)) return false;
+        return Objects.equals(this.id, s.id) && Objects.equals(this.name, s.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name);
+    }
+
+    @Override
+    public String toString() {
+        return id + " " + name;
+    }
+}
+```
+
+```mermaid
+flowchart TD
+  A["Set.add(객체)"] --> B["hashCode 계산"]
+  B --> C{"같은 hash 버킷 존재?"}
+  C --> D["버킷 없음 -> 저장"]
+  C --> E["버킷 있음 -> equals 비교"]
+  E --> F{"equals == true?"}
+  F --> G["true -> 중복으로 판단, 저장 안 함"]
+  F --> H["false -> 저장"]
+```
+
 
 
 
