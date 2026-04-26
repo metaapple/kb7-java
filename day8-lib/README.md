@@ -1,4 +1,4 @@
-# ☕ Java Basic Learning - Day 8 (라이브러리 Lombok, 예외처리)
+# ☕ Java Basic Learning - Day 8 (주요 라이브러리, Lombok, 예외처리)
 
 Day 8에서는 **외부 라이브러리(Lombok)** 를 사용해 `getter/setter/toString/생성자`를 자동 생성하고,  
 `try-catch-finally`와 **try-with-resources**로 예외처리 + 파일 쓰기(`FileWriter`)를 연습합니다.
@@ -912,21 +912,37 @@ public class MathPractice {
 
 - 아래 내용은 `src/test`의 `SetTest1`, `SetTest2`, `SetTest3`, `Student`, `Student2` 기준으로 정리했습니다.
 - 핵심은 `Set`이 중복 체크 시 `hashCode()` + `equals()`를 함께 사용한다는 점입니다.
-
+- String은 equals/hashCode가 이미 구현되어 중복 제거됨
 ```java
 // SetTest1.java
-Set set = new HashSet();
-set.add("kim");
-set.add("park");
-set.add("kim");  // String은 equals/hashCode가 이미 구현되어 중복 제거됨
+package test;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetTest1 {
+    public static void main(String[] args) {
+        Set set = new HashSet();
+        set.add("kim");
+        set.add("park");
+        System.out.println(set);
+        System.out.println(set.size());
+        set.add("kim");
+        System.out.println(set);
+        System.out.println(set.size());
+
+        /////  set : 중복된 것을 자동으로 넣어주지 않음.
+        //  [kim, park]
+        //  2
+        //  [kim, park]
+        //  2
+        /////
+    }
+}
+
 ```
 
 ```java
-// SetTest2.java + Student.java
-set.add(new Student("1", "홍길동"));
-set.add(new Student("2", "김길동"));
-set.add(new Student("1", "홍길동"));  // 중복 제거됨
-System.out.println(set.contains(new Student("1", "홍길동"))); // true
 
 // Student.java
 @Data
@@ -935,22 +951,130 @@ public class Student {
     String name;
 }
 // @Data가 equals/hashCode를 자동 생성
+
 ```
+
+<br>
 
 ```java
-// SetTest3.java + Student2.java
-set.add(new Student2("1", "홍길동"));
-set.add(new Student2("2", "김길동"));
-set.add(new Student2("1", "홍길동"));  // 기본 상태에서는 중복으로 들어감
-System.out.println(set.contains(new Student2("1", "홍길동"))); // false
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetTest2 {
+    public static void main(String[] args) {
+        Set set = new HashSet();
+        set.add(new Student("1", "홍길동"));
+        set.add(new Student("2", "김길동"));
+        System.out.println(set);
+        System.out.println(set.size());
+        set.add(new Student("1", "홍길동"));
+        System.out.println(set);
+        System.out.println(set.size());
+        System.out.println(set.contains(new Student("1", "홍길동")));
+
+        /////  set : 중복된 것을 자동으로 넣어주지 않음.
+        //  [Student(id=2, name=김길동), Student(id=1, name=홍길동)]
+        //  2
+        //  [Student(id=2, name=김길동), Student(id=1, name=홍길동)]
+        //  2
+        //  true
+        /////
+    }
+}
+
+
+```
+
+<br>
+
+```java
 
 // Student2.java
+
 public class Student2 {
-    String id;
+
+    String id;//꼭 필요한 필드
     String name;
-    // equals/hashCode 미구현(현재 파일 기준)
+
+    Student2(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+//    @Override
+//    public boolean equals(Object obj) {
+//        boolean result = false;
+//  //객체가 동일한지 비교할 때는 내부 필드의 값들이 동일한지 비교해야함.
+////------------  if (obj instance of Studuent2){ Student2 s = (Student2) obj;}
+////------------  if (obj instanceof Student2 s)와 동일
+//        if (obj instanceof Student2 s) {
+//            result = s.id.equals(id) && s.name.equals(name);
+//        }
+//        return result;
+//    }
+
+// //객체가 동일한지 비교할 때는 내부 필드의 값들이 들어있는 동일한지 비교해야함.
+//    @Override
+//    public int hashCode() {
+//        return id.hashCode() + name.hashCode();
+//    }
+
+    @Override
+    public String toString() {
+        return id + " " + name;
+    }
 }
+
 ```
+<br>
+
+```java
+
+package test;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetTest3 {
+    public static void main(String[] args) {
+        Set set = new HashSet();
+        set.add(new Student2("1", "홍길동"));
+        set.add(new Student2("2", "김길동"));
+        System.out.println(set);
+        System.out.println(set.size());
+        set.add(new Student2("1", "홍길동"));
+        System.out.println(set);
+        System.out.println(set.size());
+        System.out.println(set.contains(new Student2("1", "홍길동")));
+
+        /////  set : 필드가 들어있는 주소와 값들이 동일한지 오버라이드해주지 않고
+        //           객체의 주소만 비교하면 의도와는 다르게 처리됨.
+        //  [1 홍길동, 2 김길동]
+        //  2
+        //  [1 홍길동, 1 홍길동, 2 김길동]
+        //  3
+        //  false
+
+
+        //equals()와 hashcode() 오버라이드 후 -------------------------------
+        /////  set : 필드가 들어있는 주소와 값들이 동일한지 오버라이드해주면
+        //           중복체크를 제대로 해줌.
+        // [2 김길동, 1 홍길동]
+        // 2
+        // [2 김길동, 1 홍길동]
+        // 2
+        // true
+
+    }
+}
+
+
+
+
+
+```
+
 
 ```mermaid
 flowchart TD
@@ -960,6 +1084,15 @@ flowchart TD
   F["SetTest3: Student2 add"] --> G["equals/hashCode 미구현"]
   G --> H["중복 제거 실패 가능 / contains=false"]
 ```
+
+<br>
+<img width="546" height="419" alt="스크린샷 2026-04-26 18 40 02" src="https://github.com/user-attachments/assets/22e7b749-0972-40e7-8fc6-50f1004930bd" />
+<img width="1181" height="1331" alt="iOS 이미지" src="https://github.com/user-attachments/assets/b999d7a6-184d-44ed-aa0d-8d5fd1bdf698" />
+<img width="1536" height="1024" alt="iOS 이미지 (1)" src="https://github.com/user-attachments/assets/ee1a73b4-93c9-47ba-a717-2cf3138b97e8" />
+<img width="1536" height="1024" alt="iOS 이미지 (2)" src="https://github.com/user-attachments/assets/caba79f2-9783-4cf1-bc19-02b0a8f6ca16" />
+<img width="1619" height="972" alt="iOS 이미지 (3)" src="https://github.com/user-attachments/assets/b9d8d29e-b819-4246-afb6-c9e0a2844715" />
+<img width="1428" height="1101" alt="iOS 이미지 (4)" src="https://github.com/user-attachments/assets/280cde90-f2a8-451b-a97c-2a9a554e5d3b" />
+
 
 
 
