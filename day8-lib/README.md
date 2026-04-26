@@ -912,13 +912,34 @@ public class MathPractice {
 
 - 아래 내용은 `src/test`의 `SetTest1`, `SetTest2`, `SetTest3`, `Student`, `Student2` 기준으로 정리했습니다.
 - 핵심은 `Set`이 중복 체크 시 `hashCode()` + `equals()`를 함께 사용한다는 점입니다.
-
+- String은 equals/hashCode가 이미 구현되어 중복 제거됨
 ```java
 // SetTest1.java
-Set set = new HashSet();
-set.add("kim");
-set.add("park");
-set.add("kim");  // String은 equals/hashCode가 이미 구현되어 중복 제거됨
+package test;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetTest1 {
+    public static void main(String[] args) {
+        Set set = new HashSet();
+        set.add("kim");
+        set.add("park");
+        System.out.println(set);
+        System.out.println(set.size());
+        set.add("kim");
+        System.out.println(set);
+        System.out.println(set.size());
+
+        /////  set : 중복된 것을 자동으로 넣어주지 않음.
+        //  [kim, park]
+        //  2
+        //  [kim, park]
+        //  2
+        /////
+    }
+}
+
 ```
 
 ```java
