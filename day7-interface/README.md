@@ -1,3 +1,8 @@
+<img width="1149" height="1369" alt="image" src="https://github.com/user-attachments/assets/3850adb9-9d2d-4a5e-86c3-c56d2f4b9141" />
+
+
+<br>
+
 # ☕ Java Basic Learning - Day 7 (인터페이스, 다형성, 캐스팅, interface)
 
 Day 7에서는 **인터페이스(interface)로 “규격(기능 명세)”을 먼저 만들고**, `implements`로 구현 클래스를 교체 가능하게 조립하는 방법을 연습합니다.  
