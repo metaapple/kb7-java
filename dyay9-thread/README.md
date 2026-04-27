@@ -439,19 +439,142 @@ public class TCPClients2 {
 
 ---
 
-## 표로 정리(한눈에 보기)
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_1" src="https://github.com/user-attachments/assets/2107808d-ff05-4d34-a70c-a390cebf4bd6" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_2" src="https://github.com/user-attachments/assets/13e74147-1b18-464f-9651-2f110423f9a7" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_3" src="https://github.com/user-attachments/assets/17a7af27-b272-409b-8ad5-c6ebff31a694" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_5" src="https://github.com/user-attachments/assets/f7d39c14-b518-4ffc-953e-e1ce7b6fed4f" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_7" src="https://github.com/user-attachments/assets/2e1a859c-d58c-4414-815b-4ca0e532f8b5" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_8" src="https://github.com/user-attachments/assets/154e9202-be7d-43bf-8f9e-38ed3ecbfd80" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_11" src="https://github.com/user-attachments/assets/e3c251e7-ad28-4a22-8efc-dc97ae783ed2" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_10" src="https://github.com/user-attachments/assets/00390cc8-ef6f-4fc1-b752-b327b7166f9f" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_13" src="https://github.com/user-attachments/assets/616d90d4-c6f8-4c2b-a091-efcbcf96296c" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_18" src="https://github.com/user-attachments/assets/db8c5453-8621-4380-924c-12a29730452d" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_22" src="https://github.com/user-attachments/assets/bec18544-a3e5-4720-b50e-ce4a7c087aca" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_24" src="https://github.com/user-attachments/assets/07cfda64-8fad-4adb-b0db-ef67f0cbfe8f" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_25" src="https://github.com/user-attachments/assets/ed475726-42c4-4000-b0af-b6a025844b2d" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_26" src="https://github.com/user-attachments/assets/ed4017e9-6689-409a-aed7-536b29554334" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_27" src="https://github.com/user-attachments/assets/f417f516-b788-47b8-b60d-b1a4e93ae057" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_28" src="https://github.com/user-attachments/assets/fb622428-ad71-46ac-9fcd-39c4585725dc" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_29" src="https://github.com/user-attachments/assets/712be2ef-b1c3-42f7-a1a0-ae8dc385cfc2" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_31" src="https://github.com/user-attachments/assets/cca281a0-27fe-43e9-b5d9-c38663f6009d" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_32" src="https://github.com/user-attachments/assets/10f2e85e-531d-49d9-879f-ef6c4fc5804f" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_34" src="https://github.com/user-attachments/assets/ab51271c-2df6-4a57-95d1-8130b5440a28" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_35" src="https://github.com/user-attachments/assets/561fdf33-950d-4033-8fe1-19e9d391964a" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_36" src="https://github.com/user-attachments/assets/9bd0a7d3-eb35-4edc-acff-7025f7a81ea3" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_37" src="https://github.com/user-attachments/assets/a1fb08c8-0279-41b7-8452-beb64b9eb500" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_38" src="https://github.com/user-attachments/assets/9fe5ef97-e166-47d4-ad27-49d5e86eba06" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_39" src="https://github.com/user-attachments/assets/11b67338-84d1-40ad-b8b5-3d796619efe1" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_41" src="https://github.com/user-attachments/assets/b28bce00-6274-41d1-b921-3ce2b3614da3" />
+<img width="960" height="540" alt="5AD22ADC3FA93FEA041C2577A6D88176_42" src="https://github.com/user-attachments/assets/e43298ac-40e5-45c9-8afb-9eba49730e52" />
+<br>
 
-| 구분 | 파일 | 주제 | 핵심 API/키워드 | 관찰 포인트 |
-|---|---|---|---|---|
-| Thread 기본 | `Thread1` | 증가 루프 스레드 | `Thread`, `run`, `sleep` | 출력이 다른 스레드와 섞임 |
-| Thread 기본 | `Thread2` | 감소 루프 스레드 | `Thread`, `run`, `sleep` | 스케줄링으로 실행 순서가 매번 다를 수 있음 |
-| Thread 기본 | `ThreadUser` | 스레드 실행자 | `start`, `setName` | `start()`가 멀티스레드 시작 |
-| join | `SumThread` | 합 계산 스레드 | `run`, getter | 작업 결과를 스레드가 계산 |
-| join | `JoinExample` | 완료 대기 | `join` | `join()` 없으면 결과가 아직 0일 수 있음 |
-| 동기화 X | `BankAccount` + `SyncTest` | 경쟁 상태 예시 | 공유 변수, 조건검사-차감 | 잔액/로그가 섞이며 일관성 깨질 수 있음 |
-| 동기화 O | `BankAccount2` + `SyncTest2` | 임계구역 보호 | `synchronized` | 한 번에 한 스레드만 출금 |
-| TCP 서버(단순) | `TCPServer` | 연결 수락 | `ServerSocket`, `accept` | accept는 블로킹, 서버는 연결 카운트 |
-| TCP 클라이언트(단순) | `TCPClients` | 대량 접속 | `Socket` | 종료 처리 없으면 자원 누수 위험 |
-| TCP 서버(스레드) | `TCPServer2` | 연결당 스레드 | `new Thread(() -> ...)` | 동시 연결 처리의 기본 형태 |
-| TCP 클라이언트(스레드) | `TCPClients2` | 클라 동시 접속 | 클라 측 스레드 생성 | 스레드 과다 생성은 부담 |
+<img width="1750" height="724" alt="image" src="https://github.com/user-attachments/assets/5a14d641-1cd2-4d9e-8d1c-a51efea1a953" />
+<img width="1750" height="724" alt="image" src="https://github.com/user-attachments/assets/bf5e36b8-b6ae-45c5-9f20-e9cc9f76c6d3" />
+<img width="1750" height="724" alt="image" src="https://github.com/user-attachments/assets/8ec0ced2-0081-4e7d-9db2-f957954d551d" />
 
+
+<br>
+```
+
+package test;
+
+
+
+import javax.swing.*;
+import java.awt.BorderLayout;
+import java.awt.Font;
+import java.awt.Color;
+import java.util.Date;
+
+public class ThreadRun extends JFrame {
+    JLabel top = new JLabel("1"); //전역변수, 글로벌변수
+    JLabel center = new JLabel("2");
+    JLabel sub = new JLabel("3");
+
+    public ThreadRun() {
+        getContentPane().setBackground(Color.GREEN);
+        setTitle("나의 멀티스레드");
+        setSize(875, 360);
+
+        top.setFont(new Font("Arial Narrow", Font.BOLD, 65));
+        getContentPane().add(top, BorderLayout.NORTH);
+
+        center.setFont(new Font("굴림", Font.PLAIN, 54));
+        getContentPane().add(center, BorderLayout.CENTER);
+
+        sub.setFont(new Font("Arial Narrow", Font.BOLD, 50));
+        getContentPane().add(sub, BorderLayout.SOUTH);
+
+        JLabel lblNewLabel = new JLabel("New label");
+        lblNewLabel.setForeground(Color.GREEN);
+        lblNewLabel.setFont(new Font("굴림", Font.BOLD, 35));
+        getContentPane().add(lblNewLabel, BorderLayout.WEST);
+
+        JLabel lblNewLabel_1 = new JLabel("New label");
+        lblNewLabel_1.setForeground(Color.GREEN);
+        lblNewLabel_1.setFont(new Font("굴림", Font.BOLD, 35));
+        getContentPane().add(lblNewLabel_1, BorderLayout.EAST);
+
+        Thread counter = new Thread(){
+            @Override
+            public void run() {
+                for (int i = 500; i > 0; i--) {
+                    top.setText("Counter: " + i);
+                    System.out.println("현재 thread이름 : " + getName());
+                    try {
+                        Thread.sleep(500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        };
+        Thread timer = new Thread(){
+            @Override
+            public void run() {
+                for (int i = 0; i < 300; i++) {
+                    Date date = new Date();
+                    sub.setText(String.valueOf(date));
+                    System.out.println("현재 thread이름 : " + getName());
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        };
+        Thread img = new Thread(){
+            @Override
+            public void run() {
+                String[] img = {"1.png", "2.png", "3.png", "4.png", "5.png"};
+                for (int i = 0; i < img.length; i++) {
+                    //center.setText("이미지: " + img[i]);
+                    ImageIcon icon = new ImageIcon(img[i]);
+                    center.setIcon(icon);
+                    System.out.println("현재 thread이름 : " + getName());
+                    try {
+                        Thread.sleep(3000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        };
+
+        counter.start();
+        timer.start();
+        img.start();
+
+
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        ThreadRun t = new ThreadRun();
+    }
+}
+
+
+
+```
