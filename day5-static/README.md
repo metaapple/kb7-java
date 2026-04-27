@@ -1,3 +1,8 @@
+<img width="1122" height="1402" alt="image" src="https://github.com/user-attachments/assets/f237eb9b-a72c-4179-8692-25c4064d3fe0" />
+
+
+<br>
+
 # ☕ Java Basic Learning - Day 5 (생성자 · static · Swing 입문)
 
 ## 📚 개요
