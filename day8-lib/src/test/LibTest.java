@@ -8,6 +8,3 @@ public class LibTest {
         cal2.mul(100, 200);
     }
 }
-
-//300
-//20000
