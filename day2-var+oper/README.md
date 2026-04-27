@@ -1,6 +1,7 @@
 <img width="1199" height="1312" alt="image" src="https://github.com/user-attachments/assets/55bd9ce7-00c4-412a-b483-aa2d394e5507" />
 
 <br>
+
 # ☕ Java Basic Learning - Day 2
 
 Java 프로그래밍 기초 2일차 학습 내용 정리입니다. 연산자, 형변환, 입력(Scanner), 그리고 배열의 기초를 다룹니다.
