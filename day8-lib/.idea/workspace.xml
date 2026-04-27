@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c64935b-cd91-4dfc-93d1-5cf9b23b7a74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/libs/SetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/SetTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/SetTest3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/Student2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/SimpleGraphTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TimeCompareTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day8-libs/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day8-libs/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day8-libs/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day8-libs/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day8-libs/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day8-libs/src/main/java/test/Cal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day8-libs/src/main/java/test/Cal2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/day8_libs_1_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/day8_libs_1_0_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day8-libs-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libs/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libs/StudentUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/StudentUse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LibTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LibTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="5c64935b-cd91-4dfc-93d1-5cf9b23b7a74" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,7 +213,7 @@
       <workItem from="1776910792517" duration="5065000" />
       <workItem from="1776919180550" duration="1992000" />
       <workItem from="1777250520049" duration="110000" />
-      <workItem from="1777251844210" duration="4763000" />
+      <workItem from="1777251844210" duration="5377000" />
     </task>
     <servers />
   </component>
