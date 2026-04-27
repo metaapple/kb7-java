@@ -1,3 +1,7 @@
+<img width="1197" height="1314" alt="image" src="https://github.com/user-attachments/assets/3f900a18-8826-48da-b17b-7ae5e3aa4a86" />
+
+<br>
+
 # ☕ Java Basic Learning - Day 6 (상속, 재사용, inherit)
 
 #### 1) `Employee.java` (필드/생성자/getter-setter/`toString()` 재정의)
