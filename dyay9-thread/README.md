@@ -1,3 +1,9 @@
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/aad19abe-0974-48f1-862f-11a5e3d5a130" />
+
+<br>
+
+
 # ☕ Java Basic Learning - Day 9(thread)
 
 자바 **스레드(Thread)** 기초와 **TCP 소켓 서버/클라이언트**에서의 동시성 처리 흐름을 예제로 정리한 프로젝트입니다.
