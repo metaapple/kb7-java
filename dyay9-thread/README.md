@@ -32,8 +32,8 @@
 flowchart TB
   M[ThreadUser.main] --> A[Thread1]
   M --> B[Thread2]
-  M -->|start()| A
-  M -->|start()| B
+  M -->|start| A
+  M -->|start| B
   A --> OUT1[출력 + sleep]
   B --> OUT2[출력 + sleep]
 ```
@@ -44,8 +44,8 @@ flowchart TB
 sequenceDiagram
   participant Main as main(JoinExample)
   participant T as SumThread
-  Main->>T: start()
-  Main->>T: join() (wait)
+  Main->>T: start
+  Main->>T: join wait
   Note over Main,T: T.run()이 끝날 때까지 Main은 대기
   T-->>Main: 종료
   Main->>Main: getSum() 출력
@@ -55,14 +55,14 @@ sequenceDiagram
 
 ```mermaid
 flowchart TB
-  subgraph NoSync[동기화 없음 (BankAccount)]
-    T1[Thread-1] --> W1[withdraw(400)]
+  subgraph NoSync[동기화 없음 BankAccount]
+    T1[Thread-1] --> W1[withdraw 400]
     T2[Thread-2] --> W1
     W1 -->|동시에 balance 갱신 가능| RACE[Race condition 위험]
   end
 
-  subgraph Sync[동기화 있음 (BankAccount2)]
-    S1[Thread-1] --> SW[ synchronized withdraw(400) ]
+  subgraph Sync[동기화 있음 BankAccount2]
+    S1[Thread-1] --> SW[synchronized withdraw 400]
     S2[Thread-2] --> SW
     SW -->|한 번에 한 스레드만| SAFE[일관성 증가]
   end
@@ -73,13 +73,13 @@ flowchart TB
 ```mermaid
 flowchart TB
   subgraph S1[TCPServer: 단일 흐름]
-    ACC1[accept()] --> LOG1[카운트/로그]
+    ACC1[accept] --> LOG1[카운트/로그]
     LOG1 --> ACC1
   end
 
   subgraph S2[TCPServer2: 연결당 스레드]
-    ACC2[accept()] --> SPAWN[Thread 생성]
-    SPAWN --> WORK[처리 후 socket.close()]
+    ACC2[accept] --> SPAWN[Thread 생성]
+    SPAWN --> WORK[처리 후 socket close]
     ACC2 --> SPAWN
   end
 ```
