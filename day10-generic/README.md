@@ -311,15 +311,18 @@ public class BoardUse {
 
 <br>
 
-- LinkedList는 List, Queue 두개의 인터페이스를 구현한 클래스
+- LinkedList는 List, Queue를 상속한 Deque 두개의 인터페이스를 구현한 클래스
 
 ```
   
-public class LinkedList implements List, Queue { }
+public class LinkedList implements List, Deque { }
 
 ```
 
-<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/d93ab502-3749-476b-be8a-3cf5df2661f8" />
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/e87e2133-60ba-40e9-9ff2-dbb755e84fb7" />
+
+
 
 
 
