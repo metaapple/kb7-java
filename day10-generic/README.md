@@ -311,11 +311,11 @@ public class BoardUse {
 
 <br>
 
-- LinkedList는 List, Queue 두개의 인터페이스를 구현한 클래스
+- LinkedList는 List, Queue를 상속한 Deque 두개의 인터페이스를 구현한 클래스
 
 ```
   
-public class LinkedList implements List, Queue { }
+public class LinkedList implements List, Deque { }
 
 ```
 
