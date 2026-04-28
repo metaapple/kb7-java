@@ -12,6 +12,7 @@ public class BoardUse {
         list.add(new Board("홍4", "펀", "hong"));
         list.add(new Board("홍5", "펀", "hong"));
 
+
         System.out.println(list);
         System.out.println(list.get(0));
         System.out.println(list.size());
