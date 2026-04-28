@@ -1,3 +1,9 @@
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/aad19abe-0974-48f1-862f-11a5e3d5a130" />
+
+<br>
+
+
 # ☕ Java Basic Learning - Day 9(thread)
 
 자바 **스레드(Thread)** 기초와 **TCP 소켓 서버/클라이언트**에서의 동시성 처리 흐름을 예제로 정리한 프로젝트입니다.
@@ -469,11 +475,12 @@ public class TCPClients2 {
 <br>
 
 <img width="1750" height="724" alt="image" src="https://github.com/user-attachments/assets/5a14d641-1cd2-4d9e-8d1c-a51efea1a953" />
-<img width="1750" height="724" alt="image" src="https://github.com/user-attachments/assets/bf5e36b8-b6ae-45c5-9f20-e9cc9f76c6d3" />
+
 <img width="1750" height="724" alt="image" src="https://github.com/user-attachments/assets/8ec0ced2-0081-4e7d-9db2-f957954d551d" />
 
 
 <br>
+
 ```
 
 package test;

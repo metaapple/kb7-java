@@ -1,3 +1,18 @@
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/18c63248-c22f-4648-a701-46013443eec6" />
+
+<br>
+
+<img width="1197" height="1315" alt="image" src="https://github.com/user-attachments/assets/6d16e495-03d0-480d-8d40-055cf4f5cd6e" />
+
+<br>
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/02a52545-5c79-4db2-b206-45cc816062fb" />
+
+
+
+<br>
+
 # ☕ Java Basic Learning - Day 8 (주요 라이브러리, Lombok, 예외처리)
 
 Day 8에서는 **외부 라이브러리(Lombok)** 를 사용해 `getter/setter/toString/생성자`를 자동 생성하고,  

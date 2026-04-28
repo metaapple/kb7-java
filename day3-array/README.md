@@ -1,3 +1,9 @@
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/ebd63668-ccdf-4bca-bed9-5c1d09e1b292" />
+
+
+<br>
+
+
 # ☕ Java Basic Learning - Day 3 (Array)
 
 `day3`에서는 **배열(Array)** 을 집중적으로 연습합니다.  
