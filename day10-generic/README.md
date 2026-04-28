@@ -1,5 +1,5 @@
 <br>
-
+<br>
 ## ☕ Java Basic Learning - Day 10 (Generic / Collection)
 
 Day10은 **제네릭(Generic)** 을 왜 쓰는지(타입 안정성, 형변환 제거)와,  
