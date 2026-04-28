@@ -319,7 +319,10 @@ public class LinkedList implements List, Queue { }
 
 ```
 
-<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/d93ab502-3749-476b-be8a-3cf5df2661f8" />
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/e87e2133-60ba-40e9-9ff2-dbb755e84fb7" />
+
+
 
 
 
