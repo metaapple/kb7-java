@@ -434,6 +434,155 @@ public class TCPClients2 {
 
 ---
 
+## 추가된 예제 코드 정리 (wait/notify, properties, Swing 멀티스레드)
+
+### 5) `WaitExample.java` (wait/notify로 “조건이 될 때까지 대기”)
+
+```java
+package thread;
+
+public class WaitExample {
+    private static final Object lock = new Object();
+    private static boolean ready = false;
+
+    public static void main(String[] args) throws Exception {
+        Thread waiter = new Thread(() -> {
+            synchronized (lock) {
+                while (!ready) {
+                    try {
+                        System.out.println("waiter: ready=false, wait()로 대기");
+                        lock.wait(); // notify/notifyAll 될 때까지 대기
+                    } catch (InterruptedException e) {
+                        return;
+                    }
+                }
+                System.out.println("waiter: 깨어남! ready=true, 작업 진행");
+            }
+        });
+
+        Thread notifier = new Thread(() -> {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException ignored) {
+            }
+
+            synchronized (lock) {
+                ready = true;
+                System.out.println("notifier: ready=true, notify()");
+                lock.notify(); // 대기 중인 스레드 1개 깨움
+            }
+        });
+
+        waiter.start();
+        notifier.start();
+
+        waiter.join();
+        notifier.join();
+        System.out.println("main: 종료");
+    }
+}
+```
+
+- **핵심**: `wait()`는 **락을 잡고(synchronized 안에서)** 호출해야 하며, 호출 순간 **락을 놓고 대기 상태**로 들어갑니다.
+- **핵심**: `notify()`/`notifyAll()`도 **같은 락을 잡고(synchronized 안에서)** 호출해야 합니다.
+- **왜 while?**: `wait()`는 “가끔 이유 없이 깨어나는 것처럼 보일 수(spurious wakeup)” 있어서, `if`보다 `while(조건 체크)`가 안전합니다.
+
+```mermaid
+sequenceDiagram
+  participant W as waiter thread
+  participant N as notifier thread
+  participant L as lock
+
+  W->>L: synchronized(lock)
+  W->>W: ready 확인( false )
+  W->>L: wait() (락 놓고 대기)
+  Note over W: WAITING 상태
+
+  N->>N: sleep(1s)
+  N->>L: synchronized(lock)
+  N->>N: ready=true
+  N->>L: notify()
+  N-->>L: synchronized 종료(락 반환)
+
+  W->>L: (깨어나서) 락 재획득
+  W->>W: ready 재확인( true )
+  W->>W: 작업 진행 후 종료
+```
+
+---
+
+### 6) `PropertiesExample.java` + `database.properties` (설정 파일 읽기)
+
+```java
+package thread;
+
+import java.util.Properties;
+
+public class PropertiesExample {
+    public static void main(String[] args) throws Exception {
+        Properties properties = new Properties();
+        properties.load(PropertiesExample.class.getResourceAsStream("database.properties"));
+
+        String driver = properties.getProperty("driver");
+        String url = properties.getProperty("url");
+        String username = properties.getProperty("username");
+        String password = properties.getProperty("password");
+        String admin = properties.getProperty("admin");
+
+        System.out.println("driver : " + driver);
+        System.out.println("url : " + url);
+        System.out.println("username : " + username);
+        System.out.println("password : " + password);
+        System.out.println("admin : " + admin);
+    }
+}
+```
+
+```properties
+driver=oracle.jdbc.OracleDirver
+url=jdbc:oracle:thin:@localhost:1521:orcl
+username=scott
+password=tiger
+admin=홍길동
+```
+
+- **핵심**: `Properties`는 `key=value` 설정을 읽는 표준 컬렉션입니다.
+- **핵심**: `getResourceAsStream("database.properties")`는 **`PropertiesExample`과 같은 패키지/경로**에 있는 리소스를 읽습니다. (여기서는 `src/thread/database.properties`)
+- **주의**: `admin` 같은 한글은 저장 방식에 따라 유니코드 이스케이프(`\uXXXX`)로 보일 수 있습니다. 출력은 정상적으로 한글로 찍히는 경우가 많습니다.
+
+```mermaid
+flowchart LR
+  A[PropertiesExample] --> B[getResourceAsStream]
+  B --> C[(database.properties)]
+  C --> D[Properties.load]
+  D --> E[getProperty(key)]
+  E --> F[콘솔 출력]
+```
+
+---
+
+### 7) `ThreadRun.java` (Swing UI에서 “서로 다른 작업을 스레드로 동시에”)
+
+- **구성**: `JFrame` 화면에 3개의 라벨(`top`, `center`, `sub`)을 배치하고,
+  - **counter 스레드**: 숫자 카운트다운(1초 간격)
+  - **timer 스레드**: 현재 시간 갱신(1초 간격)
+  - **img 스레드**: 이미지/텍스트를 3초 간격으로 변경
+  을 동시에 실행합니다.
+
+```mermaid
+flowchart TB
+  UI[JFrame/Labels 생성] --> START[3개 Thread start()]
+  START --> C[counter: top 변경]
+  START --> T[timer: sub 시간 변경]
+  START --> I[img: center 이미지/텍스트 변경]
+  C --> S1[sleep 1s]
+  T --> S2[sleep 1s]
+  I --> S3[sleep 3s]
+```
+
+- **주의(중요)**: Swing은 원칙적으로 **EDT(Event Dispatch Thread)** 에서 UI를 업데이트하는 것이 안전합니다.  
+  실습에서는 동작 확인이 가능하지만, 실무/안정성 관점에서는 `SwingUtilities.invokeLater(...)`로 라벨 변경 코드를 EDT로 보내는 방식이 권장됩니다.
+
 ## 어떻게 실행하나요?
 
 ### IntelliJ IDEA 기준
