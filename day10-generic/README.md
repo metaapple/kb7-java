@@ -1,6 +1,11 @@
 <br>
 
-## ☕ Java Basic Learning - Day 10 (Generic / Collection)
+<img width="1536" height="1024" alt="image (1)" src="https://github.com/user-attachments/assets/6f00fdac-6948-4f51-93cf-273e2fdd8d66" />
+
+
+<br>
+
+# ☕ Java Basic Learning - Day 10 (Generic / Collection)
 
 Day10은 **제네릭(Generic)** 을 왜 쓰는지(타입 안정성, 형변환 제거)와,  
 자주 쓰는 **컬렉션(ArrayList / List)** 에 제네릭을 적용해서 객체를 안전하게 다루는 예제를 정리한 프로젝트입니다.
@@ -264,4 +269,17 @@ public class BoardUse {
   - 사용자 정의 제네릭: `TruckUse`
 - `day10-generic/src/collection` 실행
   - 컬렉션 + 객체: `BoardUse`
+
+<br>
+<hr>
+<br>
+
+
+<img width="405" height="228" alt="4FEF0064A5D2AFB0180E6D4CACFF5118_1" src="https://github.com/user-attachments/assets/375dccca-78f5-48ba-a12b-f8b633c49369" />
+<img width="405" height="228" alt="4FEF0064A5D2AFB0180E6D4CACFF5118_2" src="https://github.com/user-attachments/assets/f8e716e5-0fd0-45c8-8c5f-03768d539cf0" />
+<img width="405" height="228" alt="4FEF0064A5D2AFB0180E6D4CACFF5118_3" src="https://github.com/user-attachments/assets/2e1fc1b2-f53f-47e3-aa77-dc21caffbd25" />
+<img width="405" height="228" alt="4FEF0064A5D2AFB0180E6D4CACFF5118_5" src="https://github.com/user-attachments/assets/24a0a108-f299-4d25-b6cf-727362279758" />
+<img width="405" height="228" alt="4FEF0064A5D2AFB0180E6D4CACFF5118_11" src="https://github.com/user-attachments/assets/c19ff416-556b-46d9-9aa0-4c381df31a58" />
+<img width="405" height="228" alt="4FEF0064A5D2AFB0180E6D4CACFF5118_24" src="https://github.com/user-attachments/assets/92d48ec1-a4d2-4e0f-9c40-8340b71094aa" />
+<img width="405" height="228" alt="4FEF0064A5D2AFB0180E6D4CACFF5118_27" src="https://github.com/user-attachments/assets/e01a6003-6a20-475f-82da-173026afa277" />
 
