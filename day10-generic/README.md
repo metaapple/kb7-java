@@ -27,13 +27,13 @@ Day10은 **제네릭(Generic)** 을 왜 쓰는지(타입 안정성, 형변환 �
 
 ```mermaid
 flowchart TB
-  subgraph Raw[Raw type: ArrayList]
+  subgraph Raw["Raw type (no generic): ArrayList"]
     A1[list.add(String)] --> A2[list.get(0) : Object]
     A2 --> A3[다운캐스팅 필요 (String)]
     A3 --> A4[String 메서드 사용]
   end
 
-  subgraph Gen[Generic: ArrayList<String>]
+  subgraph Gen["Generic: ArrayList<String>"]
     B1[list.add(String)] --> B2[list.get(0) : String]
     B2 --> B3[바로 String 메서드 사용]
   end
