@@ -309,6 +309,17 @@ public class BoardUse {
 <img width="2208" height="1242" alt="557DD1F5D74E0E406BB75F4D951BAA0F_68" src="https://github.com/user-attachments/assets/3010906e-4d6e-4788-999d-df69806bcc2d" />
 <img width="2208" height="1242" alt="557DD1F5D74E0E406BB75F4D951BAA0F_69" src="https://github.com/user-attachments/assets/055163d9-ed32-4be7-a29c-2b05c63e4051" />
 
+<br>
+
+- LinkedList는 List, Queue 두개의 인터페이스를 구현한 클래스
+
+```
+  
+public class LinkedList implements List, Queue { }
+
+```
+
+<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/d93ab502-3749-476b-be8a-3cf5df2661f8" />
 
 
 
