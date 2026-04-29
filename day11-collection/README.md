@@ -459,7 +459,7 @@ admin=\uD64D\uAE38\uB3D9
 <img width="2344" height="1838" alt="image" src="https://github.com/user-attachments/assets/b428d845-3dcd-4926-9f2d-a73451c70d17" />
 
 <br>
-- 객체 동일 비교 : equals()와 hashCode() 재정의, 객체 크기 비교 : compare() 
+- 객체 동일 비교 : equals()와 hashCode() 재정의, 객체 크기 비교 : compareTo() 재정의
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/57f10941-4d24-4a57-8338-1887b42bfe5d" />
 
 <br>
