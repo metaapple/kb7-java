@@ -61,10 +61,10 @@ sequenceDiagram
 
 ```mermaid
 flowchart TB
-  A[Person3.action(calcuable)] --> B[calcuable.calc(10,20)]
-  B --> C1[람다식 x+y]
-  B --> C2[Computer::staticMethod]
-  B --> C3[com::instanceMethod]
+  A["Person3 action 호출"] --> B["calc 실행 (10,20)"]
+  B --> C1["람다식 전달: x+y"]
+  B --> C2["정적 메서드 참조 전달"]
+  B --> C3["인스턴스 메서드 참조 전달"]
   C1 --> D[결과 출력]
   C2 --> D
   C3 --> D
