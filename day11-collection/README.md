@@ -1,5 +1,9 @@
 <br>
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f1e14f62-0e2b-47b7-91bd-2fae83257c31" />
+
+<br>
+
 # ☕ Java Basic Learning - Day 11 (Collection / Lambda / Properties)
 
 Day11은 컬렉션 프레임워크에서 자주 사용하는 **Set / Map / TreeSet**과,  
@@ -349,7 +353,7 @@ admin=\uD64D\uAE38\uB3D9
 
 <br>
 <img width="1215" height="1295" alt="image" src="https://github.com/user-attachments/assets/159dd87a-a983-4ebb-b8e6-1df8d7e1d57b" />
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/86d159fa-31d3-4ff9-9988-95c671407681" />
+
 
 <img width="3643" height="1892" alt="image" src="https://github.com/user-attachments/assets/47c09a13-6ec2-4901-bfaa-5131f4f56ccc" />
 - 처리할 함수들을 모아 미리 클래스로 만들어둔 경우 클래스의 메서드를 직접호출하여 지정 가능
