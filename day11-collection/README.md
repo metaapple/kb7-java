@@ -345,3 +345,205 @@ admin=\uD64D\uAE38\uB3D9
 - `TreeSet`에서 사용자 정의 객체를 정렬하려면 무엇이 필요한가?
 - 람다식과 메서드 참조를 언제 교체해서 쓸 수 있는지 알고 있는가?
 - `Properties`를 통해 설정을 외부화하는 이유를 설명할 수 있는가?
+
+
+<br>
+<img width="1215" height="1295" alt="image" src="https://github.com/user-attachments/assets/159dd87a-a983-4ebb-b8e6-1df8d7e1d57b" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/86d159fa-31d3-4ff9-9988-95c671407681" />
+
+<img width="3643" height="1892" alt="image" src="https://github.com/user-attachments/assets/47c09a13-6ec2-4901-bfaa-5131f4f56ccc" />
+- 처리할 함수들을 모아 미리 클래스로 만들어둔 경우 클래스의 메서드를 직접호출하여 지정 가능
+<img width="3620" height="1762" alt="image" src="https://github.com/user-attachments/assets/abffb03c-7cb7-412d-923c-12ef73c9035c" />
+
+<br>
+<hr>
+- 코드 정리(컴파일 에러가 없을 때만)
+<img width="2344" height="1838" alt="image" src="https://github.com/user-attachments/assets/b428d845-3dcd-4926-9f2d-a73451c70d17" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/57f10941-4d24-4a57-8338-1887b42bfe5d" />
+
+<br>
+- intellij에서 equals()와 hashCode() 재정의 코드 생성하기
+<img width="914" height="877" alt="image" src="https://github.com/user-attachments/assets/b1ca912c-267e-4cf8-b866-309302a7406f" />
+<img width="621" height="723" alt="image" src="https://github.com/user-attachments/assets/dbfd0ce1-dd3a-4899-8deb-2f7c2aab0ad4" />
+<img width="1158" height="657" alt="image" src="https://github.com/user-attachments/assets/bd69d2bf-ce16-4758-96bc-d02d0aba2e1a" />
+<img width="1151" height="655" alt="image" src="https://github.com/user-attachments/assets/c355d3b1-8275-4074-8177-84c49a163f9f" />
+<img width="1158" height="652" alt="image" src="https://github.com/user-attachments/assets/66d5a862-f427-4f0e-8b1d-4b275e76765b" />
+
+```
+package test;
+
+public class Person   {
+    public String name;
+    public int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+```
+
+```
+
+package test;
+
+import java.util.Objects;
+
+public class Person2 implements Comparable<Person2> {
+    public String name;
+    public int age;
+
+    public Person2(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+
+    //객체 비교(동일) --> 값: equals(), 주소: hashcode()
+    //생성된 객체 필드의 값과 주소가 동일한지 비교
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Person2 person2)) return false;
+        return age == person2.age && Objects.equals(name, person2.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
+    }
+
+    //객체 비교(누가 더 큰가/작은가)
+    @Override
+    public int compareTo(Person2 o) {
+        if (age < o.age) return -1;
+        else if (age == o.age) return 0;
+        else return 1;
+    }
+
+    @Override
+    public String toString() {
+        return "Person2{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+}
+
+
+```
+
+```
+package test;
+
+import java.util.Objects;
+
+public class Person2 implements Comparable<Person2> {
+    public String name;
+    public int age;
+
+    public Person2(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+
+    //객체 비교(동일) --> 값: equals(), 주소: hashcode()
+    //생성된 객체 필드의 값과 주소가 동일한지 비교
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Person2 person2)) return false;
+        return age == person2.age && Objects.equals(name, person2.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
+    }
+
+    //객체 비교(누가 더 큰가/작은가)
+    @Override
+    public int compareTo(Person2 o) {
+        if (age < o.age) return -1;
+        else if (age == o.age) return 0;
+        else return 1;
+    }
+
+    @Override
+    public String toString() {
+        return "Person2{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+}
+
+
+```
+
+```
+
+package test;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class TreeSetTest {
+    public static void main(String[] args) {
+        TreeSet<String> treeSet = new TreeSet<>();
+        treeSet.add("홍길동");
+        treeSet.add("김길동");
+        treeSet.add("정길동");
+        System.out.println(treeSet);
+
+        //자동 정렬해주는 기능이 있는데, 주소를 가지고 대소를 비교할 수 없으므로
+        //내부적으로 정렬기능 수행못함. 에러
+        //비교할 수 있는 메서드를 구현해주어야함.
+        //Comparable 인터페이스 구현
+//        TreeSet<Person> treeSet2 = new TreeSet<>();
+//        treeSet2.add(new Person("홍길동", 100));
+//        treeSet2.add(new Person("김길동", 200));
+//        treeSet2.add(new Person("홍길동", 100));
+//        System.out.println(treeSet2);
+
+//        Exception in thread "main" java.lang.ClassCastException: class test.Person cannot be cast to class java.lang.Comparable (test.Person is in unnamed module of loader 'app'; java.lang.Comparable is in module java.base of loader 'bootstrap')
+//        at java.base/java.util.TreeMap.compare(TreeMap.java:1569)
+//        at java.base/java.util.TreeMap.addEntryToEmptyMap(TreeMap.java:776)
+//        at java.base/java.util.TreeMap.put(TreeMap.java:785)
+//        at java.base/java.util.TreeMap.put(TreeMap.java:534)
+//        at java.base/java.util.TreeSet.add(TreeSet.java:255)
+//        at test.TreeSetTest.main(TreeSetTest.java:16)
+
+
+        TreeSet<Person2> treeSet3 = new TreeSet<>();
+        treeSet3.add(new Person2("홍길동", 100));
+        treeSet3.add(new Person2("김길동", 200));
+        //정렬의 대상인 age가 100으로 동일하므로 들어가지 않음.
+        treeSet3.add(new Person2("홍길동", 100));
+        System.out.println(treeSet3);
+
+        Set<Person2> set = new HashSet<>();
+        set.add(new Person2("홍길동", 100));
+        set.add(new Person2("김길동", 200));
+        set.add(new Person2("홍길동", 100));
+        System.out.println(set);
+
+
+//[김길동, 정길동, 홍길동]
+//[Person2{name='홍길동', age=100}, Person2{name='김길동', age=200}]
+// equals(), hashcode()를 재정의해주지 않으면 new로 생성한 주소가 모두 다르므로
+// 중복이 되지 않았다고 봄.
+//[Person2{name='김길동', age=200}, Person2{name='홍길동', age=100}, Person2{name='홍길동', age=100}]
+//equals(), hashcode()를 재정의후
+//[Person2{name='김길동', age=200}, Person2{name='홍길동', age=100}]
+    }
+}
+
+
+
+```
