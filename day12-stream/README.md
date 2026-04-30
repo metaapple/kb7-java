@@ -202,3 +202,24 @@ public class StreamPipeLineExample {
 
 <img width="2208" height="1242" alt="6FD1EA1EF645EF159C800A38167B2A44_46" src="https://github.com/user-attachments/assets/a83c7a8a-e79f-476a-b978-d27858a750f2" />
 
+<br>
+- 디버거
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/792604a8-62ff-433c-921e-a102f7b1e93c" />
+<img width="3795" height="1973" alt="image" src="https://github.com/user-attachments/assets/d6a16b1a-1cc5-4d01-ab50-e4e507f3e136" />
+<img width="1699" height="1987" alt="image" src="https://github.com/user-attachments/assets/1840d777-50d0-483d-a78b-0e97153abebe" />
+<img width="3506" height="1403" alt="image" src="https://github.com/user-attachments/assets/04ba5b15-c380-43c3-b459-e5e1f38f5952" />
+<img width="3579" height="1787" alt="image" src="https://github.com/user-attachments/assets/c63c0ce7-0eb8-4e2d-8f27-ee480fe4fb15" />
+
+- 멀티코어 CPU → 동시에 4개 작업 처리 가능 (CPU 1개, Core 4개 (쿼드코어) <br>
+- 내부 반복자 + 멀티코어 (컬렉션 내부에서 데이터를 나눠서 여러 코어에 자동 분배) <br>
+
+<img width="1002" height="1614" alt="image" src="https://github.com/user-attachments/assets/33560dd6-2fe6-435a-afc3-e59ff3527447" />
+<br>
+<img width="2037" height="1234" alt="image" src="https://github.com/user-attachments/assets/5348c4f1-8002-4eca-8a35-876aff9f59d8" />
+<br>
+
+<img width="1480" height="581" alt="image" src="https://github.com/user-attachments/assets/37ccd42d-e379-4308-ab98-75f1ebbac539" />
+
+
+
+
