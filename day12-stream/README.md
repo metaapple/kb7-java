@@ -202,6 +202,7 @@ public class StreamPipeLineExample {
 
 <img width="2208" height="1242" alt="6FD1EA1EF645EF159C800A38167B2A44_46" src="https://github.com/user-attachments/assets/a83c7a8a-e79f-476a-b978-d27858a750f2" />
 
+
 <br>
 - 디버거
 <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/792604a8-62ff-433c-921e-a102f7b1e93c" />
@@ -209,6 +210,10 @@ public class StreamPipeLineExample {
 <img width="1699" height="1987" alt="image" src="https://github.com/user-attachments/assets/1840d777-50d0-483d-a78b-0e97153abebe" />
 <img width="3506" height="1403" alt="image" src="https://github.com/user-attachments/assets/04ba5b15-c380-43c3-b459-e5e1f38f5952" />
 <img width="3579" height="1787" alt="image" src="https://github.com/user-attachments/assets/c63c0ce7-0eb8-4e2d-8f27-ee480fe4fb15" />
+<img width="2548" height="1358" alt="image" src="https://github.com/user-attachments/assets/b7c9fe8d-ba9d-4d42-a6bf-fd15dfc9e96a" />
+<img width="2543" height="1351" alt="image" src="https://github.com/user-attachments/assets/f5377fc3-5793-436d-802d-11412ebc4e43" />
+
+<hr>
 
 - 멀티코어 CPU → 동시에 4개 작업 처리 가능 (CPU 1개, Core 4개 (쿼드코어) <br>
 - 내부 반복자 + 멀티코어 (컬렉션 내부에서 데이터를 나눠서 여러 코어에 자동 분배) <br>
